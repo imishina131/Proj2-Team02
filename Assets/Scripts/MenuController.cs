@@ -4,11 +4,14 @@ using UnityEngine.SceneManagement;
 public class MenuController : MonoBehaviour
 {
 
-    static int difficulty;
+    static int difficulty = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        if(SceneManager.GetActiveScene().name == "MainMenu")
+        {
+            difficulty = 0;
+        }
     }
 
     // Update is called once per frame
