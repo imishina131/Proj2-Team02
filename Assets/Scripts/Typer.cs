@@ -29,6 +29,7 @@ public class Typer : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        player.typing = true;
         SetCurrentWord();
     }
 
@@ -142,6 +143,7 @@ public class Typer : MonoBehaviour
                 
             }
             interactionsCount ++;
+            player.typing = false;
         }
     }
 }

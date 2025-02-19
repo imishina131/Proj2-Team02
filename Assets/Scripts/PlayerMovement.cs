@@ -24,6 +24,8 @@ public class PlayerMovement : MonoBehaviour
     public float airMultiplier;
     bool readyToJump;
 
+    public PlayerInteractions player;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

@@ -62,4 +62,9 @@ public class MenuController : MonoBehaviour
     {
         SceneManager.LoadScene("DifficultyMenu");
     }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
