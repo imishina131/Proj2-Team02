@@ -10,10 +10,16 @@ public class PlayerInteractions : MonoBehaviour
     public bool typing;
 
     bool inMouseZone;
+    bool inPaperZone;
+
+    bool hasInk;
+    bool clickedMouse;
+
+    public GameObject paper;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        paper.SetActive(false);
     }
 
     // Update is called once per frame
@@ -34,6 +40,12 @@ public class PlayerInteractions : MonoBehaviour
             if(inMouseZone)
             {
                 objectiveCount ++;
+                clickedMouse = true;
+            }
+            if(inPaperZone && clickedMouse)
+            {
+                objectiveCount ++;
+
             }
         }
     }
@@ -45,6 +57,11 @@ public class PlayerInteractions : MonoBehaviour
             fBanner.SetActive(true);
             inMouseZone = true;
         }
+        if(other.gameObject.tag == "paper" && !typing && clickedMouse)
+        {
+            fBanner.SetActive(true);
+            inPaperZone = true;
+        }
     }
 
     void OnTriggerExit(Collider other)
@@ -53,6 +70,11 @@ public class PlayerInteractions : MonoBehaviour
         {
             fBanner.SetActive(false);
             inMouseZone = false;
+        }
+        if(other.gameObject.tag == "paper" && !typing)
+        {
+            fBanner.SetActive(false);
+            inPaperZone = false;
         }
     }
 
@@ -66,6 +88,10 @@ public class PlayerInteractions : MonoBehaviour
 
             case 1: 
                 objective.text = "Grab the paper from the printer";
+                break;
+
+            case 2:
+                objective.text = "Grab the printer ink";
                 break;
         }
     }

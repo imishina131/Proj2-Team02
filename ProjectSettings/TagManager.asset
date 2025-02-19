@@ -6,6 +6,7 @@ TagManager:
   tags:
   - mouse
   - eyes
+  - paper
   layers:
   - Default
   - TransparentFX

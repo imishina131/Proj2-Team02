@@ -15,9 +15,7 @@ public class Typer : MonoBehaviour
     private string typedWord = string.Empty;
     private int numberOfCharacters;
     private int lettersTyped = 0;
-    public GameObject interaction01;
-    public GameObject interaction02;
-    public GameObject interaction03;
+    public GameObject interaction;
     public PlayerInteractions player;
     int interactionsCount = 0;
     int dialogueCount = 0;
@@ -134,11 +132,11 @@ public class Typer : MonoBehaviour
             switch(interactionsCount)
             {
                 case 0:
-                    interaction01.SetActive(false);
+                    interaction.SetActive(false);
                     break;
 
                 case 1:
-                    interaction02.SetActive(false);
+                    interaction.SetActive(false);
                     break;
                 
             }
