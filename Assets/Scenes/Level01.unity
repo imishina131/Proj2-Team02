@@ -384,6 +384,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -657,6 +661,147 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e975ad18d7d474348a3ed481d837692f, type: 3}
   m_PrefabInstance: {fileID: 17932163}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &19534620 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5743018437672970050, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+  m_PrefabInstance: {fileID: 4980643969535180341}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &20666694
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 20666695}
+  - component: {fileID: 20666697}
+  - component: {fileID: 20666696}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &20666695
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20666694}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 4.0760655, y: 10.81159, z: 4.4737}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 876609471}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 960, y: -540}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &20666696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20666694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Objective-
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 25
+  m_fontSizeBase: 25
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -111.14647, y: 0, z: -119.24803, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &20666697
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20666694}
+  m_CullTransparentMesh: 1
 --- !u!4 &25077954 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
@@ -1073,6 +1218,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1252,6 +1401,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1638,6 +1791,142 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e975ad18d7d474348a3ed481d837692f, type: 3}
   m_PrefabInstance: {fileID: 83439376}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &83730916
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 83730917}
+  - component: {fileID: 83730919}
+  - component: {fileID: 83730918}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &83730917
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83730916}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 4.4737, y: 10.81159, z: 4.4737}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1637524650}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &83730918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83730916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Press F to interact!
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -93.83092, y: 0, z: -90.37155, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &83730919
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83730916}
+  m_CullTransparentMesh: 1
 --- !u!1001 &95510577
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1726,7 +2015,7 @@ GameObject:
   m_Component:
   - component: {fileID: 99555672}
   - component: {fileID: 99555671}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ~~Floor~~
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2153,6 +2442,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2325,6 +2618,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2722,6 +3019,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3136,6 +3437,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (98)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3196,6 +3501,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4152,6 +4461,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -5026273347370692060, guid: 11837e82bbb563e43ac7834f782a17fd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0185
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 11837e82bbb563e43ac7834f782a17fd, type: 3}
       propertyPath: m_Name
       value: computerMouse
@@ -4380,6 +4693,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5279,6 +5596,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5818,6 +6139,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (81)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5956,6 +6281,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (80)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7115,6 +7444,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (72)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7516,6 +7849,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (82)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8174,6 +8511,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8235,6 +8576,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (95)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8295,6 +8640,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9296,6 +9645,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (96)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9435,6 +9788,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9495,6 +9852,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9721,6 +10082,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10574,6 +10939,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (90)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11173,6 +11542,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12551,6 +12924,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (79)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12928,6 +13305,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13862,6 +14243,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (91)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14372,6 +14757,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14791,6 +15180,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16986,6 +17379,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (78)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17865,6 +18262,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18458,6 +18859,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (88)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18536,6 +18941,82 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 647e37ef363a2b24a9b122ca027ec7fe, type: 3}
+--- !u!1 &876609470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 876609471}
+  - component: {fileID: 876609473}
+  - component: {fileID: 876609472}
+  m_Layer: 5
+  m_Name: Objective
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &876609471
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876609470}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.20952812, y: 0.08004119, z: 0.14262}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 20666695}
+  m_Father: {fileID: 1868994331}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -744, y: 471}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &876609472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876609470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &876609473
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876609470}
+  m_CullTransparentMesh: 1
 --- !u!1001 &878620922
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18591,6 +19072,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (83)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18658,6 +19143,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (94)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18718,6 +19207,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (85)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22161,6 +22654,7 @@ RectTransform:
   - {fileID: 742699730}
   - {fileID: 2071346876}
   - {fileID: 1642485780}
+  - {fileID: 19534620}
   m_Father: {fileID: 1868994331}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -23452,6 +23946,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25137,8 +25635,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 2.5582428, y: 0}
+  m_SizeDelta: {x: 56.79521, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &963584369
 MonoBehaviour:
@@ -27133,6 +27631,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (68)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27558,6 +28060,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (77)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27618,6 +28124,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (97)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27728,7 +28238,7 @@ Transform:
   m_GameObject: {fileID: 1000718392}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.01, y: 0, z: -0.74}
+  m_LocalPosition: {x: -0.01, y: 0, z: 0.042}
   m_LocalScale: {x: 0.9587619, y: 1, z: 0.9587619}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27977,6 +28487,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (60)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28042,6 +28556,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30361,6 +30879,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32050,6 +32572,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (71)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32975,6 +33501,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33694,6 +34224,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33934,6 +34468,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -34176,6 +34714,144 @@ Transform:
   - {fileID: 2094325338}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1240365758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1240365761}
+  - component: {fileID: 1240365760}
+  - component: {fileID: 1240365759}
+  m_Layer: 5
+  m_Name: BlackOverlay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1240365759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240365758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Text
+
+'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -228.19017, y: 0, z: -232.99104, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1240365760
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240365758}
+  m_CullTransparentMesh: 1
+--- !u!224 &1240365761
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240365758}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.16022, y: 0.16022, z: 0.16022}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1642485780}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -5.463751, y: -0.000030517578}
+  m_SizeDelta: {x: 389.65088, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1242586475
 GameObject:
   m_ObjectHideFlags: 0
@@ -34824,6 +35500,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -35129,6 +35809,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -35373,142 +36057,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 29621962edb5e0347921f6050379fd54, type: 3}
   m_PrefabInstance: {fileID: 1289707492}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1290508549
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1290508550}
-  - component: {fileID: 1290508552}
-  - component: {fileID: 1290508551}
-  m_Layer: 5
-  m_Name: BlackOverlay
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1290508550
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1290508549}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.16022, y: 0.16022, z: 0.16022}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1642485780}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.000030517578}
-  m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1290508551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1290508549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: 
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_EmojiFallbackSupport: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: -228.19017, y: 0, z: -232.99104, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1290508552
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1290508549}
-  m_CullTransparentMesh: 1
 --- !u!43 &1293723966
 Mesh:
   m_ObjectHideFlags: 0
@@ -35807,6 +36355,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (74)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -36427,6 +36979,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -38261,6 +38817,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38394,6 +38954,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -38534,6 +39098,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38594,6 +39162,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -38942,7 +39514,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a81ed58ef03922489e19e8403e35958, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.8738384
+      value: 6.958
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a81ed58ef03922489e19e8403e35958, type: 3}
       propertyPath: m_LocalPosition.z
@@ -39128,6 +39700,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -39189,6 +39765,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -39249,6 +39829,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -39741,6 +40325,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (93)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -39986,6 +40574,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -40244,6 +40836,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40274,7 +40870,7 @@ Transform:
   m_GameObject: {fileID: 1408554433}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.4699999, z: 0}
+  m_LocalPosition: {x: 0, y: 0.4699999, z: 0.004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -40418,6 +41014,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (70)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -43591,6 +44191,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -43651,6 +44255,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -43868,6 +44476,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -44147,6 +44759,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (86)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -44509,6 +45125,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (92)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -46660,6 +47280,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (75)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -46888,6 +47512,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -47193,6 +47821,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -47254,6 +47886,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -47270,6 +47906,7 @@ GameObject:
   - component: {fileID: 1604886575}
   - component: {fileID: 1604886574}
   - component: {fileID: 1604886576}
+  - component: {fileID: 1604886577}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -47312,16 +47949,16 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1604886573}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.17, y: 1.271, z: -7.95}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.69308174, z: -0, w: 0.72085905}
+  m_LocalPosition: {x: -6.01, y: 2.06, z: -15.19}
+  m_LocalScale: {x: 1.1768, y: 1.6345603, z: 1.1768}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2140212020}
   - {fileID: 1408554434}
   - {fileID: 1000718396}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 87.749, z: 0}
 --- !u!114 &1604886576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47336,7 +47973,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 7
   groundDrag: 10
-  playerHeight: 2
+  playerHeight: 3
   isGround:
     serializedVersion: 2
     m_Bits: 128
@@ -47344,6 +47981,21 @@ MonoBehaviour:
   jumpForce: 8
   jumpCooldown: 0.5
   airMultiplier: 0.1
+--- !u!114 &1604886577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604886573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40c8e0a6079903143a8c778710b6fb15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objective: {fileID: 20666696}
+  fBanner: {fileID: 1637524649}
+  typing: 0
 --- !u!1001 &1606934099
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47534,6 +48186,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -47742,6 +48398,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -48379,6 +49039,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -48637,6 +49301,82 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 4.6, z: 2}
   m_Center: {x: 1, y: 2.3, z: 1}
+--- !u!1 &1637524649
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1637524650}
+  - component: {fileID: 1637524652}
+  - component: {fileID: 1637524651}
+  m_Layer: 5
+  m_Name: FBanner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1637524650
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637524649}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.14262, y: 0.08004119, z: 0.14262}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 83730917}
+  m_Father: {fileID: 1868994331}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 95}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1637524651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637524649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1637524652
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637524649}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1641505904
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48751,7 +49491,7 @@ RectTransform:
   m_Children:
   - {fileID: 963584368}
   - {fileID: 1883654473}
-  - {fileID: 1290508550}
+  - {fileID: 1240365761}
   m_Father: {fileID: 903653363}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -50144,6 +50884,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (87)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -50205,6 +50949,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -50265,6 +51013,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -50621,6 +51373,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (89)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -50681,6 +51437,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -50934,6 +51694,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -51347,6 +52111,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -51753,6 +52521,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -51964,6 +52736,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -52273,6 +53049,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -52411,6 +53191,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -52716,6 +53500,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (67)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -53007,6 +53795,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -56144,6 +56936,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -56271,6 +57067,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -56689,6 +57489,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (73)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -57562,6 +58366,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -58000,6 +58808,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -58563,7 +59375,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1868994328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58641,6 +59453,8 @@ RectTransform:
   m_Children:
   - {fileID: 903653363}
   - {fileID: 1769365757}
+  - {fileID: 1637524650}
+  - {fileID: 876609471}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -58817,8 +59631,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.000030517578}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -5.463751, y: -0.000030517578}
+  m_SizeDelta: {x: 389.65088, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1883654474
 MonoBehaviour:
@@ -59594,6 +60408,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -60077,6 +60895,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -60194,6 +61016,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -61900,6 +62726,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -62791,6 +63621,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -63364,6 +64198,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -64335,6 +65173,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
       propertyPath: m_Name
       value: Planks Example (76)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -65856,6 +66698,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -66199,6 +67045,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planks Example (84)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ff2302ccd47de04b8847a471c0814a1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -66291,7 +67141,7 @@ Transform:
   m_GameObject: {fileID: 2140212019}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.027}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -66567,7 +67417,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 903653363}
     m_Modifications:
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: winPanel
@@ -66580,14 +67430,18 @@ PrefabInstance:
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: blackOverlay
       value: 
-      objectReference: {fileID: 1290508551}
+      objectReference: {fileID: 1240365759}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: interaction01
+      value: 
+      objectReference: {fileID: 903653362}
     - target: {fileID: 5743018437672970050, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -960
       objectReference: {fileID: 0}
     - target: {fileID: 5743018437672970050, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -540
       objectReference: {fileID: 0}
     - target: {fileID: 5743018437672970050, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: m_LocalPosition.z
@@ -66599,15 +67453,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5743018437672970050, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5743018437672970050, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5743018437672970050, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5743018437672970050, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -66702,7 +67556,6 @@ SceneRoots:
   - {fileID: 2229913768709169036}
   - {fileID: 1868994331}
   - {fileID: 1531930064}
-  - {fileID: 4980643969535180341}
   - {fileID: 837553582}
   - {fileID: 1114453626}
   - {fileID: 1722262149}
