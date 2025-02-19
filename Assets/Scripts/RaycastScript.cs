@@ -26,6 +26,8 @@ public class RaycastScript : MonoBehaviour
         {
             Debug.Log("hit eyes");
             losePanel.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
 }
