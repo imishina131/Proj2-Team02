@@ -11,6 +11,8 @@ public class PlayerInteractions : MonoBehaviour
 
     bool inMouseZone;
     bool inPaperZone;
+    bool inInkZone;
+    bool hasFailedPrint;
 
     bool hasInk;
     bool clickedMouse;
@@ -22,6 +24,11 @@ public class PlayerInteractions : MonoBehaviour
     public GameObject interaction03;
     public GameObject interaction04;
     public GameObject interaction05;
+
+
+    public GameObject crosshair;
+
+    public bool text03;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -32,13 +39,21 @@ public class PlayerInteractions : MonoBehaviour
     void Update()
     {
         UpdateObjective();
+
+        if(text03 == true)
+        {
+            interaction03.SetActive(true);
+        }
         if(!typing)
         {
             objectiveDisplay.SetActive(true);
+            crosshair.SetActive(true);
         }
         else if(typing)
         {
             objectiveDisplay.SetActive(false);
+            fBanner.SetActive(false);
+            crosshair.SetActive(false);
         }
 
         if(Input.GetKeyDown(KeyCode.F))
@@ -52,7 +67,19 @@ public class PlayerInteractions : MonoBehaviour
             {
                 objectiveCount ++;
                 inPaperZone = false;
+                hasFailedPrint = true;
                 interaction02.SetActive(true);
+            }
+            if(inInkZone && hasFailedPrint && !hasInk)
+            {
+                objectiveCount ++;
+                hasInk = true;
+                interaction04.SetActive(true);
+            }
+            if(inPaperZone && hasInk)
+            {
+                objectiveCount ++;
+                interaction05.SetActive(true);
             }
         }
     }
@@ -69,6 +96,11 @@ public class PlayerInteractions : MonoBehaviour
             fBanner.SetActive(true);
             inPaperZone = true;
         }
+        if(other.gameObject.tag == "ink" && !typing && hasFailedPrint)
+        {
+            fBanner.SetActive(true);
+            inInkZone = true;
+        }
     }
 
     void OnTriggerExit(Collider other)
@@ -82,6 +114,11 @@ public class PlayerInteractions : MonoBehaviour
         {
             fBanner.SetActive(false);
             inPaperZone = false;
+        }
+        if(other.gameObject.tag == "ink" && !typing)
+        {
+            fBanner.SetActive(false);
+            inInkZone = false;
         }
     }
 
@@ -99,6 +136,10 @@ public class PlayerInteractions : MonoBehaviour
 
             case 2:
                 objective.text = "Grab the printer ink";
+                break;
+
+            case 3:
+                objective.text = "Bring ink to the printer";
                 break;
         }
     }

@@ -20,6 +20,7 @@ public class Typer : MonoBehaviour
     static int interactionsCount;
     int dialogueCount = 0;
     bool nextDialogue;
+    public GameObject interaction03;
 
     string[] level01Dialogue01 = new string[] {"yes ma'am", "just gotta get through this workday and get home."};
     string level01Dialogue02 = "dang it, it's out of ink. gotta go and grab some.";
@@ -44,26 +45,46 @@ public class Typer : MonoBehaviour
     void SetCurrentWord()
     {
         lettersTyped = 0;
-        nextDialogue = false;
+        nextDialogue = true;
         blackOverlay.text = "";
         //set dialogue
         switch(interactionsCount)
         {
             case 0:
-                if(dialogueCount == 0)
+                currentWord = level01Dialogue01[dialogueCount];
+                if(dialogueCount == 1)
                 {
-                    currentWord = level01Dialogue01[dialogueCount];
-                    nextDialogue = true;
-                }
-                else if(dialogueCount == 1)
-                {
-                    currentWord = "just gotta get through this workday and get home.";
                     nextDialogue = false;
                 }
                 break;
             
             case 1:
                 currentWord = level01Dialogue02;
+                nextDialogue = false;
+                break;
+
+            case 2:
+                currentWord = level01Dialogue03[dialogueCount];
+                if(dialogueCount == 1)
+                {
+                    nextDialogue = false;
+                }
+                break;
+
+            case 3:
+                currentWord = level01Dialogue04[dialogueCount];
+                if(dialogueCount == 2)
+                {
+                    nextDialogue = false;
+                }
+                break;
+
+            case 4:
+                currentWord = level01Dialogue05[dialogueCount];
+                if(dialogueCount == 3)
+                {
+                    nextDialogue = false;
+                }
                 break;
 
         }
@@ -136,14 +157,31 @@ public class Typer : MonoBehaviour
             {
                 case 0:
                     interaction.SetActive(false);
+                    interactionsCount ++;
                     break;
 
                 case 1:
+                    player.text03 = true;
                     interaction.SetActive(false);
+                    interactionsCount ++;
+                    break;
+
+                case 2:
+                    player.text03 = false;
+                    interaction.SetActive(false);
+                    interactionsCount ++;
+                    break;
+
+                case 3:
+                    interaction.SetActive(false);
+                    interactionsCount ++;
+                    break;
+
+                case 4:
+                    SceneManager.LoadScene("Level02");
                     break;
                 
             }
-            interactionsCount ++;
             player.typing = false;
         }
     }
