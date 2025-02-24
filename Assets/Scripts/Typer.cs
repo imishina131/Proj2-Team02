@@ -17,12 +17,15 @@ public class Typer : MonoBehaviour
     private int lettersTyped = 0;
     public GameObject interaction;
     public PlayerInteractions player;
-    int interactionsCount = 0;
+    static int interactionsCount;
     int dialogueCount = 0;
     bool nextDialogue;
 
-    string[] dialogue01 = new string[] {"yes ma'am", "just gotta get through this workday and get home."};
-    string dialogue02 = "dang it, it's out of ink. gotta go and grab some";
+    string[] level01Dialogue01 = new string[] {"yes ma'am", "just gotta get through this workday and get home."};
+    string level01Dialogue02 = "dang it, it's out of ink. gotta go and grab some.";
+    string[] level01Dialogue03 = new string[] {"i'm getting the printer ink now.", "yeah, yeah, i am working on it."};
+    string[] level01Dialogue04 = new string[] {"good afternoon.", "you probably have the wrong desk.", "yeah... that's me."};
+    string[] level01Dialogue05 = new string[] {"right here, sir.", "sorry i was short on time.", "nothing, it won't happen again sir. i apologize.", "the burger is probably bigger than you."};
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -35,7 +38,7 @@ public class Typer : MonoBehaviour
     void Update()
     {
         CheckInput();
-        Debug.Log("dialogue status: " + nextDialogue);
+        Debug.Log("dialogue status: " + interactionsCount);
     }
 
     void SetCurrentWord()
@@ -49,7 +52,7 @@ public class Typer : MonoBehaviour
             case 0:
                 if(dialogueCount == 0)
                 {
-                    currentWord = dialogue01[dialogueCount];
+                    currentWord = level01Dialogue01[dialogueCount];
                     nextDialogue = true;
                 }
                 else if(dialogueCount == 1)
@@ -60,7 +63,7 @@ public class Typer : MonoBehaviour
                 break;
             
             case 1:
-                currentWord = dialogue02;
+                currentWord = level01Dialogue02;
                 break;
 
         }

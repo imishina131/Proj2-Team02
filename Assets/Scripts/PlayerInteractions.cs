@@ -16,6 +16,12 @@ public class PlayerInteractions : MonoBehaviour
     bool clickedMouse;
 
     public GameObject paper;
+
+    public GameObject interaction01;
+    public GameObject interaction02;
+    public GameObject interaction03;
+    public GameObject interaction04;
+    public GameObject interaction05;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -42,10 +48,11 @@ public class PlayerInteractions : MonoBehaviour
                 objectiveCount ++;
                 clickedMouse = true;
             }
-            if(inPaperZone && clickedMouse)
+            if(inPaperZone && clickedMouse && !hasInk)
             {
                 objectiveCount ++;
-
+                inPaperZone = false;
+                interaction02.SetActive(true);
             }
         }
     }
