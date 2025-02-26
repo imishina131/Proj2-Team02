@@ -242,11 +242,11 @@ public class PlayerInteractions : MonoBehaviour
         {
             interaction02.SetActive(true);
         }
-        if(other.gameObject.tag == "thought02" && !typing)
+        if(other.gameObject.tag == "thought02" && !typing && hasTurkey)
         {
             interaction04.SetActive(true);
         }
-        if(other.gameObject.tag == "thought03" && !typing)
+        if(other.gameObject.tag == "thought03" && !typing && hasHam)
         {
             interaction06.SetActive(true);
         }

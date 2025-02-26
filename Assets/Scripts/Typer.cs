@@ -19,10 +19,11 @@ public class Typer : MonoBehaviour
     public PlayerInteractions player;
     public RaycastScript eyes;
     static int interactionsCount;
-    static bool initialized;
+    static public bool initialized;
     int dialogueCount = 0;
     bool nextDialogue;
     public GameObject interaction03;
+    public GameObject thoughtZone;
 
     string[] level01Dialogue01 = new string[] {"yes ma'am", "just gotta get through this workday and get home."};
     string level01Dialogue02 = "dang it, it's out of ink. gotta go and grab some.";
@@ -298,6 +299,10 @@ public class Typer : MonoBehaviour
                 case 6:
                     interaction.SetActive(false);
                     interactionsCount ++;
+                    if(SceneManager.GetActiveScene().name == "Level02")
+                    {
+                        thoughtZone.SetActive(false);
+                    }
                     break;
 
                 case 7:
@@ -308,6 +313,10 @@ public class Typer : MonoBehaviour
                 case 8:
                     interaction.SetActive(false);
                     interactionsCount ++;
+                    if(SceneManager.GetActiveScene().name == "Level02")
+                    {
+                        thoughtZone.SetActive(false);
+                    }
                     break;
 
                 case 9:
@@ -318,6 +327,10 @@ public class Typer : MonoBehaviour
                 case 10:
                     interaction.SetActive(false);
                     interactionsCount ++;
+                    if(SceneManager.GetActiveScene().name == "Level02")
+                    {
+                        thoughtZone.SetActive(false);
+                    }
                     break;
 
                 case 11:

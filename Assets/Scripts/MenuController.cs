@@ -65,6 +65,7 @@ public class MenuController : MonoBehaviour
 
     public void Restart()
     {
+        Typer.initialized = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
