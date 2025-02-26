@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerInteractions : MonoBehaviour
 {
@@ -34,7 +35,10 @@ public class PlayerInteractions : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        paper.SetActive(false);
+        if(SceneManager.GetActiveScene().name == "Level01")
+        {
+            paper.SetActive(false);
+        }
     }
 
     // Update is called once per frame

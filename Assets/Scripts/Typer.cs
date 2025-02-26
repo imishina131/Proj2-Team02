@@ -29,6 +29,14 @@ public class Typer : MonoBehaviour
     string[] level01Dialogue04 = new string[] {"good afternoon.", "you probably have the wrong desk.", "yeah... that's me."};
     string[] level01Dialogue05 = new string[] {"right here, sir.", "sorry i was short on time.", "nothing, it won't happen again sir. i apologize.", "the burger is probably bigger than you."};
 
+    string level02Dialogue01 = "alright 3 items on the list for thanksgiving, in and out";
+    string level02Dialogue02 = "a turkey? this is feeling a bit illegal to buy.";
+    string[] level02Dialogue03 = new string[] {"oh no, not my neighbor.", "note? i'm sorry i didn’t.", "its clay. It comes from the ground.", "sure, won’t happen again."};
+    string level02Dialogue04 = "a ham? my great aunt was married to a pig, this is so wrong.";
+    string[] level02Dialogue05 = new string[] {"aren’t you a sloth? you don’t eat meat.", "sorry didn’t mean to offend you.", "good luck with that."};
+    string level02Dialogue06 = "finally a normal item.";
+    string[] level02Dialogue07 = new string[] {"i just said that she doesn’t eat meat, she is a sloth.", "i know, and i said i am sorry."};
+    string[] level02Dialogue08 = new string[] {"does everyone in this store know what i said?", "oh my kibble, what have i done?", "ha ha, good one... here you go.", "***** ***** *****"};
 
     public float timer;
     public bool timerOn;
@@ -37,6 +45,14 @@ public class Typer : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if(SceneManager.GetActiveScene().name == "Level01")
+        {
+            interactionsCount = 0;
+        }
+        else if(SceneManager.GetActiveScene().name == "Level02")
+        {
+            interactionsCount = 5;
+        }
         player.typing = true;
         SetCurrentWord();
         timerOn = true;
@@ -114,6 +130,58 @@ public class Typer : MonoBehaviour
             case 4:
                 currentWord = level01Dialogue05[dialogueCount];
                 if(dialogueCount == 3)
+                {
+                    nextDialogue = false;
+                }
+                break;
+
+            case 5:
+                currentWord = level02Dialogue01;
+                nextDialogue = false;
+                break;
+
+            case 6:
+                currentWord = level02Dialogue02;
+                nextDialogue = false;
+                break;
+
+            case 7:
+                currentWord = level02Dialogue03[dialogueCount];
+                if(dialogueCount == 3)
+                {
+                    nextDialogue = false;
+                }
+                break;
+
+            case 8:
+                currentWord = level02Dialogue04;
+                nextDialogue = false;
+                break;
+
+            case 9:
+                currentWord = level02Dialogue05[dialogueCount];
+                if(dialogueCount == 2)
+                {
+                    nextDialogue = false;
+                }
+                break;
+
+            case 10:
+                currentWord = level02Dialogue06;
+                nextDialogue = false;
+                break;
+
+            case 11:
+                currentWord = level02Dialogue07[dialogueCount];
+                if(dialogueCount == 1)
+                {
+                    nextDialogue = false;
+                }
+                break;
+
+            case 12:
+                currentWord = level02Dialogue08[dialogueCount];
+                if(dialogueCount == 4)
                 {
                     nextDialogue = false;
                 }
@@ -212,7 +280,49 @@ public class Typer : MonoBehaviour
                     break;
 
                 case 4:
-                    SceneManager.LoadScene("Level02");
+                    interaction.SetActive(false);
+                    interactionsCount ++;
+                    break;
+
+                case 5:
+                    interaction.SetActive(false);
+                    interactionsCount ++;
+                    nextDialogue = false;
+                break;
+
+                case 6:
+                    interaction.SetActive(false);
+                    interactionsCount ++;
+                    break;
+
+                case 7:
+                    interaction.SetActive(false);
+                    interactionsCount ++;
+                    break;
+
+                case 8:
+                    interaction.SetActive(false);
+                    interactionsCount ++;
+                    break;
+
+                case 9:
+                    interaction.SetActive(false);
+                    interactionsCount ++;
+                    break;
+
+                case 10:
+                    interaction.SetActive(false);
+                    interactionsCount ++;
+                    break;
+
+                case 11:
+                    interaction.SetActive(false);
+                    interactionsCount ++;
+                    break;
+
+                case 12:
+                    interaction.SetActive(false);
+                    interactionsCount ++;
                     break;
                 
             }
