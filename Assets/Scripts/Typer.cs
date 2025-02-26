@@ -19,6 +19,7 @@ public class Typer : MonoBehaviour
     public PlayerInteractions player;
     public RaycastScript eyes;
     static int interactionsCount;
+    static bool initialized;
     int dialogueCount = 0;
     bool nextDialogue;
     public GameObject interaction03;
@@ -45,13 +46,17 @@ public class Typer : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if(SceneManager.GetActiveScene().name == "Level01")
+        if(!initialized)
         {
-            interactionsCount = 0;
-        }
-        else if(SceneManager.GetActiveScene().name == "Level02")
-        {
-            interactionsCount = 5;
+            if(SceneManager.GetActiveScene().name == "Level01")
+            {
+                interactionsCount = 0;
+            }
+            else if(SceneManager.GetActiveScene().name == "Level02")
+            {
+                interactionsCount = 5;
+            }
+            initialized = true;
         }
         player.typing = true;
         SetCurrentWord();

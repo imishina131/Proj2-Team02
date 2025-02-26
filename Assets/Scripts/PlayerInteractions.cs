@@ -15,9 +15,16 @@ public class PlayerInteractions : MonoBehaviour
     bool inPaperZone;
     bool inInkZone;
     bool hasFailedPrint;
+    bool inTurkeyZone;
+    bool inHamZone;
+    bool inButterZone;
+    bool inCashierZone;
 
     bool hasInk;
     bool clickedMouse;
+    bool hasTurkey;
+    bool hasHam;
+    bool hasButter;
 
     public GameObject paper;
 
@@ -26,6 +33,9 @@ public class PlayerInteractions : MonoBehaviour
     public GameObject interaction03;
     public GameObject interaction04;
     public GameObject interaction05;
+    public GameObject interaction06;
+    public GameObject interaction07;
+    public GameObject interaction08;
 
 
     public GameObject crosshair;
@@ -38,6 +48,12 @@ public class PlayerInteractions : MonoBehaviour
         if(SceneManager.GetActiveScene().name == "Level01")
         {
             paper.SetActive(false);
+            objectiveCount = 0;
+        }
+
+        if(SceneManager.GetActiveScene().name == "Level02")
+        {
+            objectiveCount = 4;
         }
     }
 
@@ -89,6 +105,30 @@ public class PlayerInteractions : MonoBehaviour
                 objectiveCount ++;
                 interaction05.SetActive(true);
             }
+            if(inTurkeyZone)
+            {
+                objectiveCount ++;
+                hasTurkey = true;
+                interaction03.SetActive(true);
+
+            }
+            if(inHamZone && hasTurkey)
+            {
+                objectiveCount ++;
+                hasHam = true;
+                interaction05.SetActive(true);
+            }
+            if(inButterZone && hasHam)
+            {
+                objectiveCount ++;
+                hasButter = true;
+                interaction07.SetActive(true);
+            }
+            if(inCashierZone && hasButter)
+            {
+                objectiveCount ++;
+                interaction08.SetActive(true);
+            }
         }
     }
 
@@ -109,6 +149,26 @@ public class PlayerInteractions : MonoBehaviour
             fBanner.SetActive(true);
             inInkZone = true;
         }
+        if(other.gameObject.tag == "turkey" && !typing)
+        {
+            fBanner.SetActive(true);
+            inTurkeyZone = true;
+        }
+        if(other.gameObject.tag == "ham" && !typing && hasTurkey)
+        {
+            fBanner.SetActive(true);
+            inHamZone = true;
+        }
+        if(other.gameObject.tag == "butter" && !typing && hasHam)
+        {
+            fBanner.SetActive(true);
+            inButterZone = true;
+        }
+        if(other.gameObject.tag == "cashier" && !typing && hasButter)
+        {
+            fBanner.SetActive(true);
+            inCashierZone = true;
+        }
     }
 
     void OnTriggerExit(Collider other)
@@ -127,6 +187,38 @@ public class PlayerInteractions : MonoBehaviour
         {
             fBanner.SetActive(false);
             inInkZone = false;
+        }
+        if(other.gameObject.tag == "turkey" && !typing)
+        {
+            fBanner.SetActive(false);
+            inTurkeyZone = false;
+        }
+        if(other.gameObject.tag == "ham" && !typing)
+        {
+            fBanner.SetActive(false);
+            inHamZone = false;
+        }
+        if(other.gameObject.tag == "butter" && !typing)
+        {
+            fBanner.SetActive(false);
+            inButterZone = false;
+        }
+        if(other.gameObject.tag == "cashier" && !typing)
+        {
+            fBanner.SetActive(false);
+            inCashierZone = false;
+        }
+        if(other.gameObject.tag == "thought01" && !typing)
+        {
+            interaction02.SetActive(true);
+        }
+        if(other.gameObject.tag == "thought02" && !typing)
+        {
+            interaction04.SetActive(true);
+        }
+        if(other.gameObject.tag == "thought03" && !typing)
+        {
+            interaction06.SetActive(true);
         }
     }
 
@@ -148,6 +240,22 @@ public class PlayerInteractions : MonoBehaviour
 
             case 3:
                 objective.text = "Bring ink to the printer";
+                break;
+
+            case 4:
+                objective.text = "Get a turkey";
+                break;
+
+            case 5:
+                objective.text = "Get a ham";
+                break;
+
+            case 6:
+                objective.text = "Get peanut butter";
+                break;
+
+            case 7:
+                objective.text = "Check out your items";
                 break;
         }
     }
