@@ -67,6 +67,7 @@ public class MenuController : MonoBehaviour
     public void Restart()
     {
         PlayerInteractions.objectiveCount = 0;
+        Typer.initialized = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
