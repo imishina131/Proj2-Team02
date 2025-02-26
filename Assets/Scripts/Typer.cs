@@ -40,6 +40,7 @@ public class Typer : MonoBehaviour
     string[] level02Dialogue07 = new string[] {"i just said that she doesn’t eat meat, she is a sloth.", "i know, and i said i am sorry."};
     string[] level02Dialogue08 = new string[] {"does everyone in this store know what i said?", "oh my kibble, what have i done?", "ha ha, good one... here you go.", "***** ***** *****"};
 
+    float setDifficultyTimer;
     public float timer;
     public bool timerOn;
     public TMP_Text timerOutput;
@@ -52,6 +53,18 @@ public class Typer : MonoBehaviour
             if(SceneManager.GetActiveScene().name == "Level01")
             {
                 interactionsCount = 0;
+                if(MenuController.difficulty == 1)
+                {
+                    setDifficultyTimer = 40f;
+                }
+                else if(MenuController.difficulty == 2)
+                {
+                    setDifficultyTimer = 30f;
+                }
+                else if(MenuController.difficulty == 3)
+                {
+                    setDifficultyTimer = 20f;
+                }
             }
             else if(SceneManager.GetActiveScene().name == "Level02")
             {
@@ -96,7 +109,7 @@ public class Typer : MonoBehaviour
 
     void SetCurrentWord()
     {
-        timer = 20;
+        timer = setDifficultyTimer;
         timerOn = true;
         lettersTyped = 0;
         nextDialogue = true;

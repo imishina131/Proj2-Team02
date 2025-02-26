@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class MenuController : MonoBehaviour
 {
 
-    static int difficulty = 0;
+    static public int difficulty = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
