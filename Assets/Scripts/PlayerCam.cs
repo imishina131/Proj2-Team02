@@ -21,6 +21,7 @@ public class PlayerCam : MonoBehaviour
         if(SceneManager.GetActiveScene().name == "Level01")
         {
             xRotation += 50;
+            yRotation += 90;
         }
         if(SceneManager.GetActiveScene().name == "Level02")
         {
@@ -48,14 +49,14 @@ public class PlayerCam : MonoBehaviour
         }
         else if(player.typing == true)
         {
-            transform.rotation = Quaternion.Euler(50,0,0);
+            transform.rotation = Quaternion.Euler(50,yRotation,0);
             if(SceneManager.GetActiveScene().name == "Level01")
             {
-                transform.rotation = Quaternion.Euler(50,0,0);
+                transform.rotation = Quaternion.Euler(50,yRotation,0);
             }
             if(SceneManager.GetActiveScene().name == "Level02")
             {
-                transform.rotation = Quaternion.Euler(50,90,0);
+                transform.rotation = Quaternion.Euler(50,yRotation,0);
             }
         }
     }
