@@ -15,6 +15,7 @@ TagManager:
   - thought01
   - thought02
   - thought03
+  - Music
   layers:
   - Default
   - TransparentFX
