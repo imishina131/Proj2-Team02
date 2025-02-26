@@ -26,7 +26,25 @@ public class PlayerInteractions : MonoBehaviour
     bool hasHam;
     bool hasButter;
 
+    public GameObject ink;
     public GameObject paper;
+    public GameObject turkey;
+    public GameObject ham;
+    public GameObject butter;
+
+    public GameObject inkInHand;
+    public GameObject paperInHand;
+    public GameObject turkeyInHand;
+    public GameObject hamInHand;
+    public GameObject butterInHand;
+
+    public GameObject mouseGlow;
+    public GameObject printerGlow;
+    public GameObject inkGlow;
+    public GameObject turkeyGlow;
+    public GameObject hamGlow;
+    public GameObject butterGlow;
+    public GameObject cashierGlow;
 
     public GameObject interaction01;
     public GameObject interaction02;
@@ -48,11 +66,23 @@ public class PlayerInteractions : MonoBehaviour
         if(SceneManager.GetActiveScene().name == "Level01")
         {
             paper.SetActive(false);
+            inkInHand.SetActive(false);
+            paperInHand.SetActive(false);
+            mouseGlow.SetActive(false);
+            printerGlow.SetActive(false);
+            inkGlow.SetActive(false);
             objectiveCount = 0;
         }
 
         if(SceneManager.GetActiveScene().name == "Level02")
         {
+            turkeyInHand.SetActive(false);
+            hamInHand.SetActive(false);
+            butterInHand.SetActive(false);
+            turkeyGlow.SetActive(false);
+            hamGlow.SetActive(false);
+            butterGlow.SetActive(false);
+            cashierGlow.SetActive(false);
             objectiveCount = 4;
         }
     }
@@ -228,34 +258,64 @@ public class PlayerInteractions : MonoBehaviour
         {
             case 0:
                 objective.text = "Print the report";
+                mouseGlow.SetActive(true);
                 break;
 
             case 1: 
                 objective.text = "Grab the paper from the printer";
+                mouseGlow.SetActive(false);
+                printerGlow.SetActive(true);
                 break;
 
             case 2:
                 objective.text = "Grab the printer ink";
+                printerGlow.SetActive(false);
+                inkGlow.SetActive(true);
                 break;
 
             case 3:
                 objective.text = "Bring ink to the printer";
+                inkGlow.SetActive(false);
+                ink.SetActive(false);
+                inkInHand.SetActive(true);
+                printerGlow.SetActive(true);
                 break;
 
             case 4:
-                objective.text = "Get a turkey";
+                if(SceneManager.GetActiveScene().name == "Level01")
+                {
+                    printerGlow.SetActive(false);
+                    paperInHand.SetActive(true);
+                }
+                if(SceneManager.GetActiveScene().name == "Level02")
+                {
+                    objective.text = "Get a turkey";
+                    turkeyGlow.SetActive(true);
+                }
                 break;
 
             case 5:
                 objective.text = "Get a ham";
+                turkeyGlow.SetActive(false);
+                hamGlow.SetActive(true);
+                turkey.SetActive(false);
+                turkeyInHand.SetActive(true);
                 break;
 
             case 6:
                 objective.text = "Get peanut butter";
+                hamGlow.SetActive(false);
+                butterGlow.SetActive(true);
+                hamInHand.SetActive(true);
+                ham.SetActive(false);
                 break;
 
             case 7:
                 objective.text = "Check out your items";
+                butterGlow.SetActive(false);
+                cashierGlow.SetActive(true);
+                butter.SetActive(false);
+                butterInHand.SetActive(true);
                 break;
         }
     }
