@@ -45,6 +45,8 @@ public class Typer : MonoBehaviour
     public bool timerOn;
     public TMP_Text timerOutput;
 
+    public PlayerCam cam;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -53,24 +55,51 @@ public class Typer : MonoBehaviour
             if(SceneManager.GetActiveScene().name == "Level01")
             {
                 interactionsCount = 0;
-                if(MenuController.difficulty == 1)
-                {
-                    setDifficultyTimer = 40f;
-                }
-                else if(MenuController.difficulty == 2)
-                {
-                    setDifficultyTimer = 30f;
-                }
-                else if(MenuController.difficulty == 3)
-                {
-                    setDifficultyTimer = 20f;
-                }
             }
             else if(SceneManager.GetActiveScene().name == "Level02")
             {
                 interactionsCount = 5;
             }
             initialized = true;
+        }
+
+        if(SceneManager.GetActiveScene().name == "Level01")
+        {
+            if(MenuController.difficulty == 1)
+            {
+                setDifficultyTimer = 25f;
+            }
+            else if(MenuController.difficulty == 2)
+            {
+                setDifficultyTimer = 20f;
+            }
+            else if(MenuController.difficulty == 3)
+            {
+                setDifficultyTimer = 15f;
+            }
+            else 
+            {
+                setDifficultyTimer = 20f;
+            }
+        }
+        else if(SceneManager.GetActiveScene().name == "Level02")
+        {
+            if(MenuController.difficulty == 1)
+            {
+                setDifficultyTimer = 35f;
+            }
+            else if(MenuController.difficulty == 2)
+            {
+                setDifficultyTimer = 25f;
+            }
+            else if(MenuController.difficulty == 3)
+            {
+                setDifficultyTimer = 20f;
+            }
+            else 
+            {
+                setDifficultyTimer = 20f;
+            }
         }
         player.typing = true;
         SetCurrentWord();
@@ -312,6 +341,10 @@ public class Typer : MonoBehaviour
                 case 6:
                     interaction.SetActive(false);
                     interactionsCount ++;
+                    if(SceneManager.GetActiveScene().name == "Level01")
+                    {
+                        SceneManager.LoadScene("Level02");
+                    }
                     if(SceneManager.GetActiveScene().name == "Level02")
                     {
                         thoughtZone.SetActive(false);
@@ -354,6 +387,7 @@ public class Typer : MonoBehaviour
                 case 12:
                     interaction.SetActive(false);
                     interactionsCount ++;
+                    SceneManager.LoadScene("MainMenu");
                     break;
                 
             }

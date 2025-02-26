@@ -11,6 +11,7 @@ public class MenuController : MonoBehaviour
         if(SceneManager.GetActiveScene().name == "MainMenu")
         {
             difficulty = 0;
+            PlayerInteractions.objectiveCount = 0;
         }
     }
 
@@ -65,7 +66,7 @@ public class MenuController : MonoBehaviour
 
     public void Restart()
     {
-        Typer.initialized = false;
+        PlayerInteractions.objectiveCount = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class PlayerCam : MonoBehaviour
 {
@@ -17,7 +18,17 @@ public class PlayerCam : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if(SceneManager.GetActiveScene().name == "Level01")
+        {
+            xRotation += 50;
+        }
+        if(SceneManager.GetActiveScene().name == "Level02")
+        {
+            xRotation += 50;
+            yRotation += 90;
+        }
         Cursor.visible = false;
+        transform.rotation = Quaternion.Euler(50,0,0);
     }
 
     // Update is called once per frame
@@ -38,6 +49,14 @@ public class PlayerCam : MonoBehaviour
         else if(player.typing == true)
         {
             transform.rotation = Quaternion.Euler(50,0,0);
+            if(SceneManager.GetActiveScene().name == "Level01")
+            {
+                transform.rotation = Quaternion.Euler(50,0,0);
+            }
+            if(SceneManager.GetActiveScene().name == "Level02")
+            {
+                transform.rotation = Quaternion.Euler(50,90,0);
+            }
         }
     }
 }

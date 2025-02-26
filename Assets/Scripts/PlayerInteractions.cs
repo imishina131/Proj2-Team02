@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerInteractions : MonoBehaviour
 {
-    static int objectiveCount = 0;
+    static public int objectiveCount = 0;
     public TMP_Text objective;
     public GameObject objectiveDisplay;
     public GameObject fBanner;
