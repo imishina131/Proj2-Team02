@@ -7,6 +7,7 @@ public class PlayerInteractions : MonoBehaviour
     public TMP_Text objective;
     public GameObject objectiveDisplay;
     public GameObject fBanner;
+    public GameObject timer;
     public bool typing;
 
     bool inMouseZone;
@@ -29,6 +30,7 @@ public class PlayerInteractions : MonoBehaviour
     public GameObject crosshair;
 
     public bool text03;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -48,12 +50,14 @@ public class PlayerInteractions : MonoBehaviour
         {
             objectiveDisplay.SetActive(true);
             crosshair.SetActive(true);
+            timer.SetActive(false);
         }
         else if(typing)
         {
             objectiveDisplay.SetActive(false);
             fBanner.SetActive(false);
             crosshair.SetActive(false);
+            timer.SetActive(true);
         }
 
         if(Input.GetKeyDown(KeyCode.F))

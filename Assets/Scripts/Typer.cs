@@ -17,6 +17,7 @@ public class Typer : MonoBehaviour
     private int lettersTyped = 0;
     public GameObject interaction;
     public PlayerInteractions player;
+    public RaycastScript eyes;
     static int interactionsCount;
     int dialogueCount = 0;
     bool nextDialogue;
@@ -28,22 +29,53 @@ public class Typer : MonoBehaviour
     string[] level01Dialogue04 = new string[] {"good afternoon.", "you probably have the wrong desk.", "yeah... that's me."};
     string[] level01Dialogue05 = new string[] {"right here, sir.", "sorry i was short on time.", "nothing, it won't happen again sir. i apologize.", "the burger is probably bigger than you."};
 
+
+    public float timer;
+    public bool timerOn;
+    public TMP_Text timerOutput;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         player.typing = true;
         SetCurrentWord();
+        timerOn = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(timerOn)
+        {
+            if(timer > 0)
+            {
+                timer -= Time.deltaTime;
+                updateTimer(timer);
+            }
+            else
+            {
+                timer = 0;
+                timerOn = false;
+                eyes.Lose();
+            }
+        }
         CheckInput();
         Debug.Log("dialogue status: " + interactionsCount);
     }
 
+    void updateTimer(float currentTime)
+    {
+        currentTime += 1;
+
+        float minutes = Mathf.FloorToInt(currentTime / 60);
+        float seconds = Mathf.FloorToInt(currentTime % 60);
+        timerOutput.text = string.Format("{0:00} : {1:00}", minutes, seconds);
+    }
+
     void SetCurrentWord()
     {
+        timer = 20;
+        timerOn = true;
         lettersTyped = 0;
         nextDialogue = true;
         blackOverlay.text = "";
@@ -147,12 +179,14 @@ public class Typer : MonoBehaviour
     {
         if(nextDialogue == true)
         {
+            timerOn = false;
             dialogueCount++;
-            Invoke("SetCurrentWord", 2.0f);
+            Invoke("SetCurrentWord", 5.0f);
             //SetCurrentWord();
         }
         else
         {
+            timerOn = false;
             switch(interactionsCount)
             {
                 case 0:

@@ -8052,6 +8052,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 528673942}
     m_Modifications:
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: eyes
+      value: 
+      objectReference: {fileID: 1267958257}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: timer
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1604886577}
@@ -8067,6 +8075,14 @@ PrefabInstance:
       propertyPath: interaction
       value: 
       objectReference: {fileID: 528673941}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: timerObject
+      value: 
+      objectReference: {fileID: 842320750}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: timerOutput
+      value: 
+      objectReference: {fileID: 1439866207}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: blackOverlay
       value: 
@@ -8289,6 +8305,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 1159072601}
     m_Modifications:
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: eyes
+      value: 
+      objectReference: {fileID: 1267958257}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: timer
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1604886577}
@@ -8304,6 +8328,14 @@ PrefabInstance:
       propertyPath: interaction
       value: 
       objectReference: {fileID: 1159072600}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: timerObject
+      value: 
+      objectReference: {fileID: 842320750}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: timerOutput
+      value: 
+      objectReference: {fileID: 1439866207}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: blackOverlay
       value: 
@@ -11203,6 +11235,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 831727599}
     m_Modifications:
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: eyes
+      value: 
+      objectReference: {fileID: 1267958257}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: timer
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1604886577}
@@ -11218,6 +11258,14 @@ PrefabInstance:
       propertyPath: interaction
       value: 
       objectReference: {fileID: 831727598}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: timerObject
+      value: 
+      objectReference: {fileID: 842320750}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: timerOutput
+      value: 
+      objectReference: {fileID: 1439866207}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: blackOverlay
       value: 
@@ -21207,6 +21255,82 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e975ad18d7d474348a3ed481d837692f, type: 3}
   m_PrefabInstance: {fileID: 838053479}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &842320750
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 842320751}
+  - component: {fileID: 842320753}
+  - component: {fileID: 842320752}
+  m_Layer: 5
+  m_Name: Timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &842320751
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842320750}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1439866206}
+  m_Father: {fileID: 1868994331}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -599.99994, y: -399.99997}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &842320752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842320750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0.70440245, b: 0.064807884, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &842320753
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842320750}
+  m_CullTransparentMesh: 1
 --- !u!1001 &843327983
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41400,6 +41524,7 @@ MonoBehaviour:
     m_Bits: 64
   losePanel: {fileID: 1769365754}
   player: {fileID: 1604886577}
+  timerObject: {fileID: 842320750}
 --- !u!1001 &1269209159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51342,6 +51467,142 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b9cbe6b76bac17449c1afe9c567c682, type: 3}
   m_PrefabInstance: {fileID: 1435115587}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1439866205
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1439866206}
+  - component: {fileID: 1439866208}
+  - component: {fileID: 1439866207}
+  m_Layer: 5
+  m_Name: Timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1439866206
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439866205}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 842320751}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1439866207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439866205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 00:00
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1439866208
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439866205}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1442886244
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55403,6 +55664,7 @@ MonoBehaviour:
   objective: {fileID: 20666696}
   objectiveDisplay: {fileID: 876609470}
   fBanner: {fileID: 1637524649}
+  timer: {fileID: 842320750}
   typing: 0
   paper: {fileID: 1979871923}
   interaction01: {fileID: 903653362}
@@ -67839,6 +68101,7 @@ RectTransform:
   - {fileID: 1637524650}
   - {fileID: 876609471}
   - {fileID: 1804642532}
+  - {fileID: 842320751}
   - {fileID: 1769365757}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -73242,6 +73505,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 1760880662}
     m_Modifications:
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: eyes
+      value: 
+      objectReference: {fileID: 1267958257}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: timer
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1604886577}
@@ -73257,6 +73528,14 @@ PrefabInstance:
       propertyPath: interaction
       value: 
       objectReference: {fileID: 1760880661}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: timerObject
+      value: 
+      objectReference: {fileID: 842320750}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: timerOutput
+      value: 
+      objectReference: {fileID: 1439866207}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: blackOverlay
       value: 
@@ -76652,6 +76931,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 903653363}
     m_Modifications:
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: eyes
+      value: 
+      objectReference: {fileID: 1267958257}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: timer
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1604886577}
@@ -76667,6 +76954,14 @@ PrefabInstance:
       propertyPath: interaction
       value: 
       objectReference: {fileID: 903653362}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: timerObject
+      value: 
+      objectReference: {fileID: 842320750}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: timerOutput
+      value: 
+      objectReference: {fileID: 1439866207}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: blackOverlay
       value: 

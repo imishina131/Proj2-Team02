@@ -6,6 +6,8 @@ public class RaycastScript : MonoBehaviour
     public LayerMask mask;
     public GameObject losePanel;
     public PlayerInteractions player;
+
+    public GameObject timerObject;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -25,9 +27,15 @@ public class RaycastScript : MonoBehaviour
         if(Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 100f, mask) && player.typing == false)
         {
             Debug.Log("hit eyes");
-            losePanel.SetActive(true);
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
+            Lose();
         }
+    }
+
+    public void Lose()
+    {
+        losePanel.SetActive(true);
+        timerObject.SetActive(false);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }
