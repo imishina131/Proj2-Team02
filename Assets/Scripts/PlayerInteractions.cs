@@ -60,6 +60,7 @@ public class PlayerInteractions : MonoBehaviour
 
     public bool text03;
 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -101,6 +102,7 @@ public class PlayerInteractions : MonoBehaviour
             objectiveDisplay.SetActive(true);
             crosshair.SetActive(true);
             timer.SetActive(false);
+
         }
         else if(typing)
         {
@@ -108,6 +110,14 @@ public class PlayerInteractions : MonoBehaviour
             fBanner.SetActive(false);
             crosshair.SetActive(false);
             timer.SetActive(true);
+            inMouseZone = false;
+            inPaperZone = false;
+            inInkZone = false;
+            hasFailedPrint = false;
+            inTurkeyZone = false;
+            inHamZone= false;
+            inButterZone = false;
+            inCashierZone = false;
         }
 
         if(Input.GetKeyDown(KeyCode.F))
@@ -241,14 +251,17 @@ public class PlayerInteractions : MonoBehaviour
         if(other.gameObject.tag == "thought01" && !typing)
         {
             interaction02.SetActive(true);
+            other.gameObject.SetActive(false);
         }
         if(other.gameObject.tag == "thought02" && !typing && hasTurkey)
         {
             interaction04.SetActive(true);
+            other.gameObject.SetActive(false);
         }
         if(other.gameObject.tag == "thought03" && !typing && hasHam)
         {
             interaction06.SetActive(true);
+            other.gameObject.SetActive(false);
         }
     }
 

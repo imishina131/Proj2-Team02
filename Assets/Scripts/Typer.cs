@@ -33,7 +33,7 @@ public class Typer : MonoBehaviour
 
     string level02Dialogue01 = "alright 3 items on the list for thanksgiving, in and out";
     string level02Dialogue02 = "a turkey? this is feeling a bit illegal to buy.";
-    string[] level02Dialogue03 = new string[] {"oh no, not my neighbor.", "note? i'm sorry i didn't.", "its clay. It comes from the ground.", "sure, won't happen again."};
+    string[] level02Dialogue03 = new string[] {"oh no, not my neighbor.", "note? i'm sorry i didn't.", "its clay. it comes from the ground.", "sure, won't happen again."};
     string level02Dialogue04 = "a ham? my great aunt was married to a pig, this is so wrong.";
     string[] level02Dialogue05 = new string[] {"aren't you a sloth? you don't eat meat.", "sorry didn't mean to offend you.", "good luck with that."};
     string level02Dialogue06 = "finally a normal item.";
@@ -229,7 +229,7 @@ public class Typer : MonoBehaviour
 
             case 12:
                 currentWord = level02Dialogue08[dialogueCount];
-                if(dialogueCount == 4)
+                if(dialogueCount == 3)
                 {
                     nextDialogue = false;
                 }
@@ -328,7 +328,6 @@ public class Typer : MonoBehaviour
 
                 case 4:
                     interaction.SetActive(false);
-                    interactionsCount ++;
                     if(SceneManager.GetActiveScene().name == "Level01")
                     {
                         SceneManager.LoadScene("Level02");
@@ -343,10 +342,7 @@ public class Typer : MonoBehaviour
 
                 case 6:
                     interaction.SetActive(false);
-                    if(SceneManager.GetActiveScene().name == "Level02")
-                    {
-                        thoughtZone.SetActive(false);
-                    }
+                    interactionsCount ++;
                     break;
 
                 case 7:
@@ -357,10 +353,6 @@ public class Typer : MonoBehaviour
                 case 8:
                     interaction.SetActive(false);
                     interactionsCount ++;
-                    if(SceneManager.GetActiveScene().name == "Level02")
-                    {
-                        thoughtZone.SetActive(false);
-                    }
                     break;
 
                 case 9:
@@ -371,10 +363,6 @@ public class Typer : MonoBehaviour
                 case 10:
                     interaction.SetActive(false);
                     interactionsCount ++;
-                    if(SceneManager.GetActiveScene().name == "Level02")
-                    {
-                        thoughtZone.SetActive(false);
-                    }
                     break;
 
                 case 11:
