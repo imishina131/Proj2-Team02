@@ -328,7 +328,8 @@ public class Typer : MonoBehaviour
 
                 case 4:
                     interaction.SetActive(false);
-                    if(SceneManager.GetActiveScene().name == "Level01")
+                    interactionsCount++;
+                    if (SceneManager.GetActiveScene().name == "Level01")
                     {
                         SceneManager.LoadScene("Level02");
                     }

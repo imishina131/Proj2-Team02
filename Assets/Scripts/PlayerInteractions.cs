@@ -92,7 +92,7 @@ public class PlayerInteractions : MonoBehaviour
     void Update()
     {
         UpdateObjective();
-
+        Debug.Log("in ink:" + inInkZone);
         if(text03 == true)
         {
             interaction03.SetActive(true);
@@ -113,7 +113,6 @@ public class PlayerInteractions : MonoBehaviour
             inMouseZone = false;
             inPaperZone = false;
             inInkZone = false;
-            hasFailedPrint = false;
             inTurkeyZone = false;
             inHamZone= false;
             inButterZone = false;
@@ -122,49 +121,49 @@ public class PlayerInteractions : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.F))
         {
-            if(inMouseZone)
+            if(inMouseZone && !typing)
             {
                 objectiveCount ++;
                 clickedMouse = true;
             }
-            if(inPaperZone && clickedMouse && !hasInk)
+            if(inPaperZone && clickedMouse && !hasInk && !typing)
             {
                 objectiveCount ++;
                 inPaperZone = false;
                 hasFailedPrint = true;
                 interaction02.SetActive(true);
             }
-            if(inInkZone && hasFailedPrint && !hasInk)
+            if(inInkZone && !hasInk && !typing)
             {
                 objectiveCount ++;
                 hasInk = true;
                 interaction04.SetActive(true);
             }
-            if(inPaperZone && hasInk)
+            if(inPaperZone && hasInk && !typing)
             {
                 objectiveCount ++;
                 interaction05.SetActive(true);
             }
-            if(inTurkeyZone)
+            if(inTurkeyZone && !typing)
             {
                 objectiveCount ++;
                 hasTurkey = true;
                 interaction03.SetActive(true);
 
             }
-            if(inHamZone && hasTurkey)
+            if(inHamZone && hasTurkey && !typing)
             {
                 objectiveCount ++;
                 hasHam = true;
                 interaction05.SetActive(true);
             }
-            if(inButterZone && hasHam)
+            if(inButterZone && hasHam && !typing)
             {
                 objectiveCount ++;
                 hasButter = true;
                 interaction07.SetActive(true);
             }
-            if(inCashierZone && hasButter)
+            if(inCashierZone && hasButter && !typing)
             {
                 objectiveCount ++;
                 interaction08.SetActive(true);
