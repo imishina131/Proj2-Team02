@@ -1728,7 +1728,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 00da340acf81a454e981e11aa2592bc1, type: 3}
   m_Resource: {fileID: 8300000, guid: 00da340acf81a454e981e11aa2592bc1, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.162
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -13836,7 +13836,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 356269671}
-  - component: {fileID: 356269672}
   - component: {fileID: 356269673}
   m_Layer: 0
   m_Name: NPC01 (7)
@@ -13862,33 +13861,6 @@ Transform:
   - {fileID: 2059929208}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 788.77, z: 0}
---- !u!54 &356269672
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 356269670}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &356269673
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14795,7 +14767,6 @@ GameObject:
   - component: {fileID: 388535682}
   - component: {fileID: 388535681}
   - component: {fileID: 388535680}
-  - component: {fileID: 388535683}
   m_Layer: 0
   m_Name: NPC01
   m_TagString: Untagged
@@ -14856,33 +14827,6 @@ Transform:
   - {fileID: 610541758}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &388535683
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 388535679}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1001 &390514455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42148,7 +42092,6 @@ GameObject:
   - component: {fileID: 984198313}
   - component: {fileID: 984198312}
   - component: {fileID: 984198311}
-  - component: {fileID: 984198314}
   m_Layer: 0
   m_Name: NPC01 (3)
   m_TagString: Untagged
@@ -42209,33 +42152,6 @@ Transform:
   - {fileID: 439125749}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!54 &984198314
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 984198310}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!43 &986599012
 Mesh:
   m_ObjectHideFlags: 0
@@ -43685,7 +43601,6 @@ GameObject:
   - component: {fileID: 1032963967}
   - component: {fileID: 1032963966}
   - component: {fileID: 1032963965}
-  - component: {fileID: 1032963968}
   m_Layer: 0
   m_Name: NPC01 (4)
   m_TagString: Untagged
@@ -43746,33 +43661,6 @@ Transform:
   - {fileID: 1914670403}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!54 &1032963968
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1032963964}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1001 &1037776361
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46677,7 +46565,6 @@ GameObject:
   - component: {fileID: 1106186240}
   - component: {fileID: 1106186239}
   - component: {fileID: 1106186238}
-  - component: {fileID: 1106186241}
   m_Layer: 0
   m_Name: NPC01 (1)
   m_TagString: Untagged
@@ -46738,33 +46625,6 @@ Transform:
   - {fileID: 715115826}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!54 &1106186241
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106186237}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &1107998673
 GameObject:
   m_ObjectHideFlags: 0
@@ -47656,7 +47516,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1153278558}
-  - component: {fileID: 1153278559}
   - component: {fileID: 1153278560}
   m_Layer: 0
   m_Name: NPC01 (8)
@@ -47682,33 +47541,6 @@ Transform:
   - {fileID: 1261439857}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 665.169, z: 0}
---- !u!54 &1153278559
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1153278557}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &1153278560
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63047,7 +62879,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1397681210}
-  - component: {fileID: 1397681211}
   - component: {fileID: 1397681212}
   m_Layer: 0
   m_Name: NPC01 (6)
@@ -63073,33 +62904,6 @@ Transform:
   - {fileID: 409863852}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 679.77, z: 0}
---- !u!54 &1397681211
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1397681209}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &1397681212
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63383,7 +63187,6 @@ GameObject:
   - component: {fileID: 1407740276}
   - component: {fileID: 1407740275}
   - component: {fileID: 1407740274}
-  - component: {fileID: 1407740277}
   m_Layer: 0
   m_Name: NPC01 (2)
   m_TagString: Untagged
@@ -63444,33 +63247,6 @@ Transform:
   - {fileID: 1478345420}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!54 &1407740277
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407740273}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1001 &1407996263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81618,7 +81394,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1825948879}
-  - component: {fileID: 1825948880}
   - component: {fileID: 1825948881}
   m_Layer: 0
   m_Name: NPC01 (5)
@@ -81644,33 +81419,6 @@ Transform:
   - {fileID: 1444187294}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 509.142, z: 0}
---- !u!54 &1825948880
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1825948878}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &1825948881
 BoxCollider:
   m_ObjectHideFlags: 0

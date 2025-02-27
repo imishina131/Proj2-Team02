@@ -33,11 +33,11 @@ public class Typer : MonoBehaviour
 
     string level02Dialogue01 = "alright 3 items on the list for thanksgiving, in and out";
     string level02Dialogue02 = "a turkey? this is feeling a bit illegal to buy.";
-    string[] level02Dialogue03 = new string[] {"oh no, not my neighbor.", "note? i'm sorry i didn’t.", "its clay. It comes from the ground.", "sure, won’t happen again."};
+    string[] level02Dialogue03 = new string[] {"oh no, not my neighbor.", "note? i'm sorry i didn't.", "its clay. It comes from the ground.", "sure, won't happen again."};
     string level02Dialogue04 = "a ham? my great aunt was married to a pig, this is so wrong.";
-    string[] level02Dialogue05 = new string[] {"aren’t you a sloth? you don’t eat meat.", "sorry didn’t mean to offend you.", "good luck with that."};
+    string[] level02Dialogue05 = new string[] {"aren't you a sloth? you don't eat meat.", "sorry didn't mean to offend you.", "good luck with that."};
     string level02Dialogue06 = "finally a normal item.";
-    string[] level02Dialogue07 = new string[] {"i just said that she doesn’t eat meat, she is a sloth.", "i know, and i said i am sorry."};
+    string[] level02Dialogue07 = new string[] {"i just said that she doesn't eat meat, she is a sloth.", "i know, and i said i am sorry."};
     string[] level02Dialogue08 = new string[] {"does everyone in this store know what i said?", "oh my kibble, what have i done?", "ha ha, good one... here you go.", "***** ***** *****"};
 
     float setDifficultyTimer;
@@ -298,7 +298,6 @@ public class Typer : MonoBehaviour
             timerOn = false;
             dialogueCount++;
             Invoke("SetCurrentWord", 5.0f);
-            //SetCurrentWord();
         }
         else
         {
@@ -330,6 +329,10 @@ public class Typer : MonoBehaviour
                 case 4:
                     interaction.SetActive(false);
                     interactionsCount ++;
+                    if(SceneManager.GetActiveScene().name == "Level01")
+                    {
+                        SceneManager.LoadScene("Level02");
+                    }
                     break;
 
                 case 5:
@@ -340,11 +343,6 @@ public class Typer : MonoBehaviour
 
                 case 6:
                     interaction.SetActive(false);
-                    interactionsCount ++;
-                    if(SceneManager.GetActiveScene().name == "Level01")
-                    {
-                        SceneManager.LoadScene("Level02");
-                    }
                     if(SceneManager.GetActiveScene().name == "Level02")
                     {
                         thoughtZone.SetActive(false);

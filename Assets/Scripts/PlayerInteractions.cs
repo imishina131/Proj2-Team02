@@ -286,8 +286,9 @@ public class PlayerInteractions : MonoBehaviour
                 {
                     printerGlow.SetActive(false);
                     paperInHand.SetActive(true);
+                    inkInHand.SetActive(false);
                 }
-                if(SceneManager.GetActiveScene().name == "Level02")
+                else if(SceneManager.GetActiveScene().name == "Level02")
                 {
                     objective.text = "Get a turkey";
                     turkeyGlow.SetActive(true);

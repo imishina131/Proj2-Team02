@@ -1018,7 +1018,6 @@ GameObject:
   - component: {fileID: 23533025}
   - component: {fileID: 23533024}
   - component: {fileID: 23533023}
-  - component: {fileID: 23533026}
   m_Layer: 0
   m_Name: NPC01
   m_TagString: Untagged
@@ -1079,33 +1078,6 @@ Transform:
   - {fileID: 475336757}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &23533026
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 23533022}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1001 &23999406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18672,7 +18644,6 @@ GameObject:
   - component: {fileID: 562300789}
   - component: {fileID: 562300788}
   - component: {fileID: 562300787}
-  - component: {fileID: 562300790}
   m_Layer: 0
   m_Name: NPC01 (3)
   m_TagString: Untagged
@@ -18733,33 +18704,6 @@ Transform:
   - {fileID: 410271610}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 237.517, z: 0}
---- !u!54 &562300790
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 562300786}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &563795851
 GameObject:
   m_ObjectHideFlags: 0
@@ -26656,7 +26600,6 @@ GameObject:
   - component: {fileID: 822624536}
   - component: {fileID: 822624535}
   - component: {fileID: 822624534}
-  - component: {fileID: 822624537}
   m_Layer: 0
   m_Name: NPC01 (5)
   m_TagString: Untagged
@@ -26717,33 +26660,6 @@ Transform:
   - {fileID: 160388743}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 509.142, z: 0}
---- !u!54 &822624537
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 822624533}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1001 &822977547
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37499,7 +37415,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: af47a1bf4ef34c740a20ce7769e7f884, type: 3}
   m_Resource: {fileID: 8300000, guid: af47a1bf4ef34c740a20ce7769e7f884, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.18
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -47720,7 +47636,6 @@ GameObject:
   - component: {fileID: 1179639311}
   - component: {fileID: 1179639310}
   - component: {fileID: 1179639309}
-  - component: {fileID: 1179639312}
   m_Layer: 0
   m_Name: NPC01 (2)
   m_TagString: Untagged
@@ -47781,33 +47696,6 @@ Transform:
   - {fileID: 370066343}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!54 &1179639312
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1179639308}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &1183441657
 GameObject:
   m_ObjectHideFlags: 0
@@ -52957,7 +52845,6 @@ GameObject:
   - component: {fileID: 1361627436}
   - component: {fileID: 1361627435}
   - component: {fileID: 1361627434}
-  - component: {fileID: 1361627437}
   m_Layer: 0
   m_Name: NPC01 (4)
   m_TagString: Untagged
@@ -53018,33 +52905,6 @@ Transform:
   - {fileID: 1343679466}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!54 &1361627437
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1361627433}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1001 &1365145043
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60270,7 +60130,6 @@ GameObject:
   - component: {fileID: 1601719023}
   - component: {fileID: 1601719022}
   - component: {fileID: 1601719021}
-  - component: {fileID: 1601719024}
   m_Layer: 0
   m_Name: NPC01 (7)
   m_TagString: Untagged
@@ -60331,33 +60190,6 @@ Transform:
   - {fileID: 289613422}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 788.77, z: 0}
---- !u!54 &1601719024
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601719020}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1001 &1603812766
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62793,7 +62625,6 @@ GameObject:
   - component: {fileID: 1702280426}
   - component: {fileID: 1702280425}
   - component: {fileID: 1702280424}
-  - component: {fileID: 1702280427}
   m_Layer: 0
   m_Name: NPC01 (6)
   m_TagString: Untagged
@@ -62854,33 +62685,6 @@ Transform:
   - {fileID: 84905649}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 679.77, z: 0}
---- !u!54 &1702280427
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1702280423}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &1702656444
 GameObject:
   m_ObjectHideFlags: 0
@@ -63915,7 +63719,6 @@ GameObject:
   - component: {fileID: 1736251253}
   - component: {fileID: 1736251252}
   - component: {fileID: 1736251251}
-  - component: {fileID: 1736251254}
   m_Layer: 0
   m_Name: NPC01 (1)
   m_TagString: Untagged
@@ -63976,33 +63779,6 @@ Transform:
   - {fileID: 1879833398}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!54 &1736251254
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1736251250}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1001 &1736835445
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80769,7 +80545,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2049136479}
-  - component: {fileID: 2049136481}
   - component: {fileID: 2049136480}
   m_Layer: 0
   m_Name: NPC01 (8)
@@ -80816,33 +80591,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 2.762824, z: 1}
   m_Center: {x: 0, y: -0.00092840195, z: 0}
---- !u!54 &2049136481
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2049136478}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1001 &2053304641
 PrefabInstance:
   m_ObjectHideFlags: 0
