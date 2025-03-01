@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 584cdb6a4e1e39141a9bbde584f79491
+guid: 834b54938bb63e944ae7b2870993cde4
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -8,7 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: _defaultMat
-    second: {fileID: 2100000, guid: bba69006abd63cb488052be68ca00481, type: 2}
+    second: {fileID: 2100000, guid: ab19d392629f11c40af6170e6f60482f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metalDark
+    second: {fileID: 2100000, guid: e705bff41f2292e418d752c4f42d8f9c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
