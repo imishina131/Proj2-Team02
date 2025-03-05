@@ -96,7 +96,8 @@ public class PlayerInteractions : MonoBehaviour
 
         if(SceneManager.GetActiveScene().name == "Level03")
         {
-            objectiveCount = 7;
+
+            objectiveCount = 8;
         }
     }
 
@@ -111,6 +112,7 @@ public class PlayerInteractions : MonoBehaviour
         }
         if(!typing)
         {
+            Debug.Log("not hidden");
             objectiveDisplay.SetActive(true);
             crosshair.SetActive(true);
             timer.SetActive(false);
@@ -118,6 +120,7 @@ public class PlayerInteractions : MonoBehaviour
         }
         else if(typing)
         {
+            Debug.Log("hidden");
             objectiveDisplay.SetActive(false);
             fBanner.SetActive(false);
             crosshair.SetActive(false);

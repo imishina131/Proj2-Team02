@@ -45,6 +45,23 @@ public class Typer : MonoBehaviour
     string[] level03Dialogue03 = new string[] {"Sorry, I have been so busy with work. I really want to visit.", "*What the **** is going on right now.*", "Oh Alright", "*I am going to put away my dish*"};
     string[] level03Dialogue04 = new string[] {"Sure, what do you need?", "What?", "I am awake. What do you mean?", "I got to get out of here!"};
     
+    public GameObject[] part01;
+    public GameObject[] part02;
+    public GameObject[] part03;
+    public GameObject[] part04;
+    public GameObject[] part05;
+    public GameObject[] part06;
+    public GameObject[] part07;
+
+    int order;
+    int order01 = 0;
+    int order02 = 0;
+    int order03 = 0;
+    int order04 = 0;
+    int order05 = 0;
+    int order06 = 0;
+    int order07 = 0;
+
     float setDifficultyTimer;
     public float timer;
     public bool timerOn;
@@ -59,6 +76,48 @@ public class Typer : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        while(order01 < part01.Length)
+        {
+            part01[order01].SetActive(false);
+            order01++;
+        }
+
+        while(order02 < part02.Length)
+        {
+            part02[order02].SetActive(false);
+            order02++;
+        }
+
+        while(order03 < part03.Length)
+        {
+            part03[order03].SetActive(false);
+            order03++;
+        }
+
+        while(order04 < part04.Length)
+        {
+            part04[order04].SetActive(false);
+            order04++;
+        }
+
+        while(order05 < part05.Length)
+        {
+            part05[order05].SetActive(false);
+            order05++;
+        }
+
+        while(order06 < part06.Length)
+        {
+            part06[order06].SetActive(false);
+            order06++;
+        }
+
+        while(order07 < part07.Length)
+        {
+            part07[order07].SetActive(false);
+            order07++;
+        }
+
         if(!initialized)
         {
             if(SceneManager.GetActiveScene().name == "Level01")
@@ -92,7 +151,7 @@ public class Typer : MonoBehaviour
             }
             else 
             {
-                setDifficultyTimer = 20f;
+                setDifficultyTimer = 60f;
             }
         }
         else if(SceneManager.GetActiveScene().name == "Level02")
@@ -111,7 +170,7 @@ public class Typer : MonoBehaviour
             }
             else 
             {
-                setDifficultyTimer = 20f;
+                setDifficultyTimer = 60f;
             }
         }
         else if(SceneManager.GetActiveScene().name == "Level03")
@@ -130,7 +189,7 @@ public class Typer : MonoBehaviour
             }
             else 
             {
-                setDifficultyTimer = 20f;
+                setDifficultyTimer = 80f;
             }
         }
         player.typing = true;
@@ -170,6 +229,8 @@ public class Typer : MonoBehaviour
 
     void SetCurrentWord()
     {
+        Debug.Log("word count:" + dialogueCount);
+        Debug.Log("interaction count:" + interactionsCount);
         timer = setDifficultyTimer;
         timerOn = true;
         lettersTyped = 0;
@@ -179,122 +240,465 @@ public class Typer : MonoBehaviour
         switch(interactionsCount)
         {
             case 0:
+                order = 0;
                 currentWord = level01Dialogue01[dialogueCount];
-                if(dialogueCount == 1)
+                if(dialogueCount == 0)
                 {
+                    while(order < part01.Length)
+                    {
+                        part01[order].SetActive(true);
+                        order++;
+                    }
+                }
+                else if(dialogueCount == 1)
+                {
+                    while(order < part02.Length)
+                    {
+                        part02[order].SetActive(true);
+                        order++;
+                    }
                     nextDialogue = false;
                 }
                 break;
             
             case 1:
+                order = 0;
+                while(order < part01.Length)
+                {
+                    part01[order].SetActive(true);
+                    order++;
+                }
                 currentWord = level01Dialogue02;
                 nextDialogue = false;
                 break;
 
             case 2:
+                order = 0;
                 currentWord = level01Dialogue03[dialogueCount];
+                if(dialogueCount == 0)
+                {
+                    while(order < part01.Length)
+                    {
+                        part01[order].SetActive(true);
+                        order++;
+                    }
+                }
                 if(dialogueCount == 1)
                 {
+                    while(order < part02.Length)
+                    {
+                        part02[order].SetActive(true);
+                        order++;
+                    }
                     nextDialogue = false;
                 }
                 break;
 
             case 3:
+                order = 0;
                 currentWord = level01Dialogue04[dialogueCount];
+                if(dialogueCount == 0)
+                {
+                    while(order < part01.Length)
+                    {
+                        part01[order].SetActive(true);
+                        order++;
+                    }
+                }
+                if(dialogueCount == 1)
+                {
+                    while(order < part02.Length)
+                    {
+                        part02[order].SetActive(true);;
+                        order++;
+                    }
+                }
                 if(dialogueCount == 2)
                 {
+                    while(order < part03.Length)
+                    {
+                        part03[order].SetActive(true);
+                        order++;
+                    }
                     nextDialogue = false;
                 }
                 break;
 
             case 4:
+                order = 0;
                 currentWord = level01Dialogue05[dialogueCount];
+                if(dialogueCount == 0)
+                {
+                    while(order < part01.Length)
+                    {
+                        part01[order].SetActive(true);
+                        order++;
+                    }
+                }
+                if(dialogueCount == 1)
+                {
+                    while(order < part02.Length)
+                    {
+                        part02[order].SetActive(true);
+                        order++;
+                    }
+                }
+                if(dialogueCount == 2)
+                {
+                    while(order < part03.Length)
+                    {
+                        part03[order].SetActive(true);
+                        order++;
+                    }
+                }
                 if(dialogueCount == 3)
                 {
+                    while(order < part04.Length)
+                    {
+                        part04[order].SetActive(true);
+                        order++;
+                    }
                     nextDialogue = false;
                 }
                 break;
 
             case 5:
+                order = 0;
+                while(order < part01.Length)
+                {
+                    part01[order].SetActive(true);
+                    order++;
+                }
                 currentWord = level02Dialogue01;
                 nextDialogue = false;
                 break;
 
             case 6:
+                order = 0;
+                while(order < part01.Length)
+                {
+                    part01[order].SetActive(true);
+                    order++;
+                }
                 currentWord = level02Dialogue02;
                 nextDialogue = false;
                 break;
 
             case 7:
+                order = 0;
                 currentWord = level02Dialogue03[dialogueCount];
+                if(dialogueCount == 0)
+                {
+                    while(order < part01.Length)
+                    {
+                        part01[order].SetActive(true);
+                        order++;
+                    }
+                }
+                if(dialogueCount == 1)
+                {
+                    while(order < part02.Length)
+                    {
+                        part02[order].SetActive(true);
+                        order++;
+                    }
+                }
+                if(dialogueCount == 2)
+                {
+                    while(order < part03.Length)
+                    {
+                        part03[order].SetActive(true);
+                        order++;
+                    }
+                }
                 if(dialogueCount == 3)
                 {
+                    while(order < part04.Length)
+                    {
+                        part04[order].SetActive(true);
+                        order++;
+                    }
                     nextDialogue = false;
                 }
                 break;
 
             case 8:
+                order = 0;
+                while(order < part01.Length)
+                {
+                    part01[order].SetActive(true);
+                    order++;
+                }
                 currentWord = level02Dialogue04;
                 nextDialogue = false;
                 break;
 
             case 9:
+                order = 0;
                 currentWord = level02Dialogue05[dialogueCount];
+                if(dialogueCount == 0)
+                {   
+                    while(order < part01.Length)
+                    {
+                        part01[order].SetActive(true);
+                        order++;
+                    }
+
+                }
+                if(dialogueCount == 1)
+                {
+                    while(order < part02.Length)
+                    {
+                        part02[order].SetActive(true);
+                        order++;
+                    }
+                }
                 if(dialogueCount == 2)
                 {
+                    while(order < part03.Length)
+                    {
+                        part03[order].SetActive(true);
+                        order++;
+                    }
                     nextDialogue = false;
                 }
                 break;
 
             case 10:
+                order = 0;
+                while(order < part01.Length)
+                {
+                    part01[order].SetActive(true);
+                    order++;
+                }
                 currentWord = level02Dialogue06;
                 nextDialogue = false;
                 break;
 
             case 11:
+                order = 0;
                 currentWord = level02Dialogue07[dialogueCount];
+                if(dialogueCount == 0)
+                {
+                    while(order < part01.Length)
+                    {
+                        part01[order].SetActive(true);
+                        order++;
+                    }
+                }
                 if(dialogueCount == 1)
                 {
+                    while(order < part02.Length)
+                    {
+                        part02[order].SetActive(true);
+                        order++;
+                    }
                     nextDialogue = false;
                 }
                 break;
 
             case 12:
+                order = 0;
                 currentWord = level02Dialogue08[dialogueCount];
+                if(dialogueCount == 0)
+                {
+                    while(order < part01.Length)
+                    {
+                        part01[order].SetActive(true);
+                        order++;
+                    }
+                }
+                if(dialogueCount == 1)
+                {
+                    while(order < part02.Length)
+                    {
+                        part02[order].SetActive(true);
+                        order++;
+                    }
+                }
+                if(dialogueCount == 2)
+                {
+                    while(order < part03.Length)
+                    {
+                        part03[order].SetActive(true);
+                        order++;
+                    }
+                }
                 if(dialogueCount == 3)
                 {
+                    while(order < part04.Length)
+                    {
+                        part04[order].SetActive(true);
+                        order++;
+                    }
                     nextDialogue = false;
                 }
                 break;
 
             case 13:
+                order = 0;
                 currentWord = level03Dialogue01[dialogueCount];
+                if(dialogueCount == 0)
+                {
+                    while(order < part01.Length)
+                    {
+                        part01[order].SetActive(true);
+                        order++;
+                    }
+                }
+                if(dialogueCount == 1)
+                {
+                    while(order < part02.Length)
+                    {
+                        part02[order].SetActive(true);
+                        order++;
+                    }
+                }
+                if(dialogueCount == 2)
+                {
+                    while(order < part03.Length)
+                    {
+                        part03[order].SetActive(true);
+                        order++;
+                    }
+                }
                 if(dialogueCount == 3)
                 {
+                    while(order < part04.Length)
+                    {
+                        part04[order].SetActive(true);
+                        order++;
+                    }
                     nextDialogue = false;
                 }
                 break;
 
             case 14:
+                order = 0;
                 currentWord = level03Dialogue02[dialogueCount];
+                if(dialogueCount == 0)
+                {
+                    while(order < part01.Length)
+                    {
+                        part01[order].SetActive(true);
+                        order++;
+                    }
+                }
+                if(dialogueCount == 1)
+                {
+                    while(order < part02.Length)
+                    {
+                        part02[order].SetActive(true);
+                        order++;
+                    }
+                }
+                if(dialogueCount == 2)
+                {
+                    while(order < part03.Length)
+                    {
+                        part03[order].SetActive(true);
+                        order++;
+                    }
+                }
+                if(dialogueCount == 3)
+                {
+                    while(order < part04.Length)
+                    {
+                        part04[order].SetActive(true);
+                        order++;
+                    }
+                }
+                if(dialogueCount == 4)
+                {
+                    while(order < part05.Length)
+                    {
+                        part05[order].SetActive(true);
+                        order++;
+                    }
+                }
                 if(dialogueCount == 5)
                 {
+                    while(order < part06.Length)
+                    {
+                        part06[order].SetActive(true);
+                        order++;
+                    }
                     nextDialogue = false;
                 }
                 break;
 
             case 15:
+                order = 0;
                 currentWord = level03Dialogue03[dialogueCount];
+                if(dialogueCount == 0)
+                {
+                    while(order < part01.Length)
+                    {
+                        part01[order].SetActive(true);
+                        order++;
+                    }
+                }
+                if(dialogueCount == 1)
+                {
+                    while(order < part02.Length)
+                    {
+                        part02[order].SetActive(true);
+                        order++;
+                    }
+                }
+                if(dialogueCount == 2)
+                {
+                    while(order < part03.Length)
+                    {
+                        part03[order].SetActive(true);
+                        order++;
+                    }
+                }
                 if(dialogueCount == 3)
                 {
+                    while(order < part04.Length)
+                    {
+                        part04[order].SetActive(true);
+                        order++;
+                    }
                     nextDialogue = false;
                 }
                 break;
 
             case 16:
+                order = 0;
                 currentWord = level03Dialogue04[dialogueCount];
+                if(dialogueCount == 0)
+                {
+                    while(order < part01.Length)
+                    {
+                        part01[order].SetActive(true);
+                        order++;
+                    }
+                }
+                if(dialogueCount == 1)
+                {
+                    while(order < part02.Length)
+                    {
+                        part02[order].SetActive(true);
+                        order++;
+                    }
+                }
+                if(dialogueCount == 2)
+                {
+                    while(order < part03.Length)
+                    {
+                        part03[order].SetActive(true);
+                        order++;
+                    }
+                }
                 if(dialogueCount == 3)
                 {
+                    while(order < part04.Length)
+                    {
+                        part04[order].SetActive(true);
+                        order++;
+                    }
                     nextDialogue = false;
                 }
                 break;
