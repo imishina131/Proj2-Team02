@@ -2982,7 +2982,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &55959539
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8316,7 +8316,7 @@ PrefabInstance:
       objectReference: {fileID: 195768130}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: timer
-      value: 20
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: player
@@ -11643,12 +11643,12 @@ RectTransform:
   - {fileID: 1583094676}
   - {fileID: 810160871}
   - {fileID: 2127181793}
-  - {fileID: 736347122}
   - {fileID: 1202799178}
-  - {fileID: 242790139}
+  - {fileID: 1033357245}
   - {fileID: 55959539}
   - {fileID: 1499891515}
-  - {fileID: 1033357245}
+  - {fileID: 736347122}
+  - {fileID: 242790139}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -25917,7 +25917,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1202799178
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28867,7 +28867,7 @@ PrefabInstance:
       objectReference: {fileID: 195768130}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: timer
-      value: 20
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: player
@@ -31865,7 +31865,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1499891515
 RectTransform:
   m_ObjectHideFlags: 0
@@ -42400,7 +42400,7 @@ PrefabInstance:
       objectReference: {fileID: 195768130}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: timer
-      value: 20
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: player
@@ -52874,7 +52874,7 @@ PrefabInstance:
       objectReference: {fileID: 195768130}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: timer
-      value: 20
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: player
