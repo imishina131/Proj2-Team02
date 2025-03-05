@@ -25,20 +25,20 @@ public class Typer : MonoBehaviour
     public GameObject interaction03;
     public GameObject thoughtZone;
 
-    string[] level01Dialogue01 = new string[] {"yes ma'am", "just gotta get through this workday and get home."};
-    string level01Dialogue02 = "dang it, it's out of ink. gotta go and grab some.";
-    string[] level01Dialogue03 = new string[] {"i'm getting the printer ink now.", "yeah, yeah, i am working on it."};
-    string[] level01Dialogue04 = new string[] {"good afternoon.", "you probably have the wrong desk.", "yeah... that's me."};
-    string[] level01Dialogue05 = new string[] {"right here, sir.", "sorry i was short on time.", "nothing, it won't happen again sir. i apologize.", "the burger is probably bigger than you."};
+    string[] level01Dialogue01 = new string[] {"Yes ma'am", "Just gotta get through this workday and get home."};
+    string level01Dialogue02 = "Dang it, it's out of ink. Gotta go and grab some.";
+    string[] level01Dialogue03 = new string[] {"I'm getting the printer ink now.", "Yeah, yeah, I am working on it."};
+    string[] level01Dialogue04 = new string[] {"Good afternoon.", "You probably have the wrong desk.", "Yeah... that's me."};
+    string[] level01Dialogue05 = new string[] {"Right here, sir.", "Sorry I was short on time.", "Nothing, it won't happen again sir. I apologize.", "The burger is probably bigger than you."};
 
-    string level02Dialogue01 = "alright 3 items on the list for thanksgiving, in and out";
-    string level02Dialogue02 = "a turkey? this is feeling a bit illegal to buy.";
-    string[] level02Dialogue03 = new string[] {"oh no, not my neighbor.", "note? i'm sorry i didn't.", "its clay. it comes from the ground.", "sure, won't happen again."};
-    string level02Dialogue04 = "a ham? my great aunt was married to a pig, this is so wrong.";
-    string[] level02Dialogue05 = new string[] {"aren't you a sloth? you don't eat meat.", "sorry didn't mean to offend you.", "good luck with that."};
-    string level02Dialogue06 = "finally a normal item.";
-    string[] level02Dialogue07 = new string[] {"i just said that she doesn't eat meat, she is a sloth.", "i know, and i said i am sorry."};
-    string[] level02Dialogue08 = new string[] {"does everyone in this store know what i said?", "oh my kibble, what have i done?", "ha ha, good one... here you go.", "***** ***** *****"};
+    string level02Dialogue01 = "Alright 3 items on the list for thanksgiving, in and out";
+    string level02Dialogue02 = "A turkey? This is feeling a bit illegal to buy.";
+    string[] level02Dialogue03 = new string[] {"Oh no, not my neighbor.", "Note? I'm sorry I didn't.", "Its clay. It comes from the ground.", "Sure, won't happen again."};
+    string level02Dialogue04 = "A ham? My great aunt was married to a pig, this is so wrong.";
+    string[] level02Dialogue05 = new string[] {"Aren't you a sloth? You don't eat meat.", "Sorry didn't mean to offend you.", "Good luck with that."};
+    string level02Dialogue06 = "Finally a normal item.";
+    string[] level02Dialogue07 = new string[] {"I just said that she doesn't eat meat, she is a sloth.", "I know, and I said I am sorry."};
+    string[] level02Dialogue08 = new string[] {"Does everyone in this store know what I said?", "Oh my kibble, what have I done?", "ha ha, good one... here you go.", "***** ***** *****"};
 
     float setDifficultyTimer;
     public float timer;
