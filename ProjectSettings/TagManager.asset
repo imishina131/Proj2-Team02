@@ -16,6 +16,10 @@ TagManager:
   - thought02
   - thought03
   - Music
+  - breadsticks
+  - table
+  - sink
+  - exit
   layers:
   - Default
   - TransparentFX
