@@ -67,6 +67,17 @@ public class PlayerInteractions : MonoBehaviour
 
     public bool text03;
 
+    public AudioSource sfxSound;
+    public AudioClip mouseClick;
+    public AudioClip freezerOpen;
+    public AudioClip freezerClose;
+    public AudioClip interact;
+    public AudioClip printerPrint;
+    public AudioClip doorClose;
+    public AudioClip doorOpen;
+
+
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -140,29 +151,39 @@ public class PlayerInteractions : MonoBehaviour
             {
                 objectiveCount ++;
                 clickedMouse = true;
+                sfxSound.clip = mouseClick;
+                sfxSound.Play();
             }
             if(inPaperZone && clickedMouse && !hasInk && !typing)
             {
                 objectiveCount ++;
                 inPaperZone = false;
                 hasFailedPrint = true;
+                sfxSound.clip = interact;
+                sfxSound.Play();
                 interaction02.SetActive(true);
             }
             if(inInkZone && !hasInk && !typing)
             {
                 objectiveCount ++;
                 hasInk = true;
+                sfxSound.clip = interact;
+                sfxSound.Play();
                 interaction04.SetActive(true);
             }
             if(inPaperZone && hasInk && !typing)
             {
                 objectiveCount ++;
+                sfxSound.clip = printerPrint;
+                sfxSound.Play();
                 interaction05.SetActive(true);
             }
             if(inTurkeyZone && !typing)
             {
                 objectiveCount ++;
                 hasTurkey = true;
+                sfxSound.clip = interact;
+                sfxSound.Play();
                 interaction03.SetActive(true);
 
             }
@@ -170,35 +191,47 @@ public class PlayerInteractions : MonoBehaviour
             {
                 objectiveCount ++;
                 hasHam = true;
+                sfxSound.clip = interact;
+                sfxSound.Play();
                 interaction05.SetActive(true);
             }
             if(inButterZone && hasHam && !typing)
             {
                 objectiveCount ++;
                 hasButter = true;
+                sfxSound.clip = interact;
+                sfxSound.Play();
                 interaction07.SetActive(true);
             }
             if(inCashierZone && hasButter && !typing)
             {
                 objectiveCount ++;
+                sfxSound.clip = interact;
+                sfxSound.Play();
                 interaction08.SetActive(true);
             }
             if(inBreadstickZone && !typing)
             {
                 objectiveCount ++;
                 hasBreadsticks = true;
+                sfxSound.clip = interact;
+                sfxSound.Play();
                 interaction02.SetActive(true);
             }
             if(inTableZone && !typing && hasBreadsticks) 
             {
                 objectiveCount ++;
                 leftBreadsticks = true;
+                sfxSound.clip = interact;
+                sfxSound.Play();
                 interaction03.SetActive(true);
             }
             if(inSinkZone && !typing && leftBreadsticks)
             {
                 objectiveCount ++;
                 end = true;
+                sfxSound.clip = interact;
+                sfxSound.Play();
                 interaction04.SetActive(true);
             }
         }
