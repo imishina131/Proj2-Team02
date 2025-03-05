@@ -19,12 +19,19 @@ public class PlayerInteractions : MonoBehaviour
     bool inHamZone;
     bool inButterZone;
     bool inCashierZone;
+    bool inBreadstickZone;
+    bool inTableZone;
+    bool inSinkZone;
 
     bool hasInk;
     bool clickedMouse;
     bool hasTurkey;
     bool hasHam;
     bool hasButter;
+    bool hasBreadsticks;
+    bool leftBreadsticks;
+    bool putDish;
+    bool end;
 
     public GameObject ink;
     public GameObject paper;
@@ -85,6 +92,11 @@ public class PlayerInteractions : MonoBehaviour
             butterGlow.SetActive(false);
             cashierGlow.SetActive(false);
             objectiveCount = 4;
+        }
+
+        if(SceneManager.GetActiveScene().name == "Level03")
+        {
+            objectiveCount = 7;
         }
     }
 
@@ -168,6 +180,24 @@ public class PlayerInteractions : MonoBehaviour
                 objectiveCount ++;
                 interaction08.SetActive(true);
             }
+            if(inBreadstickZone && !typing)
+            {
+                objectiveCount ++;
+                hasBreadsticks = true;
+                interaction02.SetActive(true);
+            }
+            if(inTableZone && !typing && hasBreadsticks) 
+            {
+                objectiveCount ++;
+                leftBreadsticks = true;
+                interaction03.SetActive(true);
+            }
+            if(inSinkZone && !typing && leftBreadsticks)
+            {
+                objectiveCount ++;
+                end = true;
+                interaction04.SetActive(true);
+            }
         }
     }
 
@@ -207,6 +237,25 @@ public class PlayerInteractions : MonoBehaviour
         {
             fBanner.SetActive(true);
             inCashierZone = true;
+        }
+        if(other.gameObject.tag == "breadsticks" && !typing)
+        {
+            fBanner.SetActive(true);
+            inBreadstickZone = true;
+        }
+        if(other.gameObject.tag == "table" && !typing && hasBreadsticks)
+        {
+            fBanner.SetActive(true);
+            inTableZone = true;
+        }
+        if(other.gameObject.tag == "sink" && !typing && leftBreadsticks)
+        {
+            fBanner.SetActive(true);
+            inSinkZone = true;
+        }
+        if(other.gameObject.tag == "exit" && !typing && end)
+        {
+            SceneManager.LoadScene("EndScene");
         }
     }
 
@@ -329,6 +378,22 @@ public class PlayerInteractions : MonoBehaviour
                 cashierGlow.SetActive(true);
                 butter.SetActive(false);
                 butterInHand.SetActive(true);
+                break;
+
+            case 8:
+                objective.text = "Grab the breadsticks";
+                break;
+
+            case 9:
+                objective.text = "Place the breadsticks on the table";
+                break;
+
+            case 10:
+                objective.text = "Put your dish in the sink";
+                break;
+
+            case 11:
+                objective.text = "LEAVE";
                 break;
         }
     }

@@ -40,12 +40,21 @@ public class Typer : MonoBehaviour
     string[] level02Dialogue07 = new string[] {"I just said that she doesn't eat meat, she is a sloth.", "I know, and I said I am sorry."};
     string[] level02Dialogue08 = new string[] {"Does everyone in this store know what I said?", "Oh my kibble, what have I done?", "ha ha, good one... here you go.", "***** ***** *****"};
 
+    string[] level03Dialogue01 = new string[] {"*Okay, you can do this. Just get through this dinner and I will be golden.*", "*OH GOD MY STEPMOTHER IS RIDICULING ME! What a cliche...*", "Well I was thinking of a new business venture after my trip to the store recently. Elephant meat! Seems like there is a market for animal meats now.", "*I am going to grab the breadsticks from the counter.*"};
+    string[] level03Dialogue02 = new string[] {"Hey, little Jimmy. Don’t get too close I am feeling a little sick.", "I don’t know what you mean. I am just busy grabbing these breadsticks.", "*OH MY GOD HE KNOWS!*", "No... ha ha ha...", "*Silence*", "*Something is wrong with that kid.*"};
+    string[] level03Dialogue03 = new string[] {"Sorry, I have been so busy with work. I really want to visit.", "*What the **** is going on right now.*", "Oh Alright", "*I am going to put away my dish*"};
+    string[] level03Dialogue04 = new string[] {"Sure, what do you need?", "What?", "I am awake. What do you mean?", "I got to get out of here!"};
+    
     float setDifficultyTimer;
     public float timer;
     public bool timerOn;
     public TMP_Text timerOutput;
 
     public PlayerCam cam;
+
+    public GameObject dontLookGame;
+
+    public DontLookGame dontlook;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -60,6 +69,10 @@ public class Typer : MonoBehaviour
             {
                 interactionsCount = 5;
             }
+            else if(SceneManager.GetActiveScene().name == "Level03")
+            {
+                interactionsCount = 13;
+            }
             initialized = true;
         }
 
@@ -67,11 +80,11 @@ public class Typer : MonoBehaviour
         {
             if(MenuController.difficulty == 1)
             {
-                setDifficultyTimer = 25f;
+                setDifficultyTimer = 35f;
             }
             else if(MenuController.difficulty == 2)
             {
-                setDifficultyTimer = 20f;
+                setDifficultyTimer = 25f;
             }
             else if(MenuController.difficulty == 3)
             {
@@ -86,15 +99,34 @@ public class Typer : MonoBehaviour
         {
             if(MenuController.difficulty == 1)
             {
-                setDifficultyTimer = 35f;
+                setDifficultyTimer = 50f;
             }
             else if(MenuController.difficulty == 2)
             {
-                setDifficultyTimer = 25f;
+                setDifficultyTimer = 40f;
             }
             else if(MenuController.difficulty == 3)
             {
+                setDifficultyTimer = 30f;
+            }
+            else 
+            {
                 setDifficultyTimer = 20f;
+            }
+        }
+        else if(SceneManager.GetActiveScene().name == "Level03")
+        {
+            if(MenuController.difficulty == 1)
+            {
+                setDifficultyTimer = 90f;
+            }
+            else if(MenuController.difficulty == 2)
+            {
+                setDifficultyTimer = 70f;
+            }
+            else if(MenuController.difficulty == 3)
+            {
+                setDifficultyTimer = 50f;
             }
             else 
             {
@@ -235,6 +267,38 @@ public class Typer : MonoBehaviour
                 }
                 break;
 
+            case 13:
+                currentWord = level03Dialogue01[dialogueCount];
+                if(dialogueCount == 3)
+                {
+                    nextDialogue = false;
+                }
+                break;
+
+            case 14:
+                currentWord = level03Dialogue02[dialogueCount];
+                if(dialogueCount == 5)
+                {
+                    nextDialogue = false;
+                }
+                break;
+
+            case 15:
+                currentWord = level03Dialogue03[dialogueCount];
+                if(dialogueCount == 3)
+                {
+                    nextDialogue = false;
+                }
+                break;
+
+            case 16:
+                currentWord = level03Dialogue04[dialogueCount];
+                if(dialogueCount == 3)
+                {
+                    nextDialogue = false;
+                }
+                break;
+
         }
         SetRemainingWord(currentWord);
     }
@@ -271,6 +335,11 @@ public class Typer : MonoBehaviour
             {
                 ShowWin();
             }
+        }
+        else if(typedLetterChar != currentWord[lettersTyped])
+        {
+            dontLookGame.SetActive(true);
+            timerOn = false;
         }
     }
 
@@ -374,7 +443,27 @@ public class Typer : MonoBehaviour
                 case 12:
                     interaction.SetActive(false);
                     interactionsCount ++;
-                    SceneManager.LoadScene("MainMenu");
+                    SceneManager.LoadScene("Level03");
+                    break;
+
+                case 13:
+                    interaction.SetActive(false);
+                    interactionsCount ++;
+                    break;
+
+                case 14:
+                    interaction.SetActive(false);
+                    interactionsCount ++;
+                    break;
+
+                case 15:
+                    interaction.SetActive(false);
+                    interactionsCount ++;
+                    break;
+
+                case 16:
+                    interaction.SetActive(false);
+                    interactionsCount ++;
                     break;
                 
             }
