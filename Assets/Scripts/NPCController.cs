@@ -1,15 +1,19 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.AI;
 
 public class NPCController : MonoBehaviour
 {
-    public float moveSpeed;
-    public float rotSpeed;
 
-    bool isWandering;
-    bool isRotatingLeft;
-    bool isRotatingRight;
-    bool isWalking;
+
+    public Transform[] points;
+
+    int walkingStage = 0;
+
+    public NavMeshAgent npc;
+
+    bool moveBack;
+    bool dead;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,53 +23,47 @@ public class NPCController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!isWandering)
+        Debug.Log("moveback:" + moveBack);
+        Debug.Log("moveNumber:" + walkingStage);
+        if(walkingStage == points.Length)
         {
-            StartCoroutine(Wander());
+            moveBack = true;
+            walkingStage --;
         }
-        if(isRotatingRight)
+        else if(walkingStage == 0)
         {
-            transform.Rotate(transform.up * Time.deltaTime * rotSpeed);
+            moveBack = false;
         }
-        if(isRotatingLeft)
+
+        if(!dead)
         {
-            transform.Rotate(transform.up * Time.deltaTime * -rotSpeed);
-        }
-        if(isWalking)
-        {
-            transform.position += transform.forward * moveSpeed * Time.deltaTime;
+            Move();
         }
     }
 
-    IEnumerator Wander()
+    void Move()
     {
-        int rotTime = Random.Range(1,3);
-        int rotateWait = Random.Range(1,4);
-        int rotateLOrR = Random.Range(1,2);
-        int walkWait = Random.Range(1,5);
-        int walkTime = Random.Range(1,6);
+        npc.SetDestination(points[walkingStage].position);
 
-        isWandering = true;
-
-        yield return new WaitForSeconds(walkWait);
-        isWalking = true;
-        yield return new WaitForSeconds(walkTime);
-        isWalking = false;
-        yield return new WaitForSeconds(rotateWait);
-
-        if(rotateLOrR == 1)
+        if(!npc.pathPending)
         {
-            isRotatingRight = true;
-            yield return new WaitForSeconds(rotTime);
-            isRotatingRight = false;
+            if(npc.remainingDistance <= npc.stoppingDistance)
+            {
+                if(moveBack)
+                {
+                    walkingStage --;
+                }
+                else if(!moveBack)
+                {
+                    walkingStage++;
+                }
+            }
         }
-        else if(rotateLOrR == 2)
-        {
-            isRotatingLeft = true;
-            yield return new WaitForSeconds(rotTime);
-            isRotatingLeft = false;
-        }
-
-        isWandering = false;
     }
+
+    public void Explode()
+    {
+        dead = true;
+    }
+
 }
