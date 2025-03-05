@@ -293,6 +293,20 @@ public class PlayerInteractions : MonoBehaviour
         {
             SceneManager.LoadScene("EndScene");
         }
+        if(other.gameObject.tag == "door" && !typing)
+        {
+            sfxSound.clip = doorOpen;
+            sfxSound.Play();
+            Animator animator = other.gameObject.GetComponent<Animator>();
+            animator.SetBool("Open", true);
+        }
+        if(other.gameObject.tag == "freezer" && !typing)
+        {
+            sfxSound.clip = doorOpen;
+            sfxSound.Play();
+            Animator animator = other.gameObject.GetComponent<Animator>();
+            animator.SetBool("Open", true);
+        }
     }
 
     void OnTriggerExit(Collider other)
@@ -346,6 +360,20 @@ public class PlayerInteractions : MonoBehaviour
         {
             interaction06.SetActive(true);
             other.gameObject.SetActive(false);
+        }
+        if(other.gameObject.tag == "door" && !typing)
+        {
+            sfxSound.clip = doorClose;
+            sfxSound.Play();
+            Animator animator = other.gameObject.GetComponent<Animator>();
+            animator.SetBool("Open", false);
+        }
+        if(other.gameObject.tag == "freezer" && !typing)
+        {
+            sfxSound.clip = doorClose;
+            sfxSound.Play();
+            Animator animator = other.gameObject.GetComponent<Animator>();
+            animator.SetBool("Open", false);
         }
     }
 

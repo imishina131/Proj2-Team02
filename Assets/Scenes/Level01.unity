@@ -88053,7 +88053,7 @@ GameObject:
   - component: {fileID: 1817174131}
   m_Layer: 0
   m_Name: DoorTrigger
-  m_TagString: Untagged
+  m_TagString: door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88115,8 +88115,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 7.3074465, y: 10.470243, z: 16.161516}
-  m_Center: {x: 2.2967443, y: 4.735123, z: 0.7405392}
+  m_Size: {x: 14.701905, y: 10.470243, z: 25.093847}
+  m_Center: {x: 3.916419, y: 4.735123, z: 1.3240871}
 --- !u!1 &1818180609
 GameObject:
   m_ObjectHideFlags: 0

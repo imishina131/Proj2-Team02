@@ -28171,7 +28171,7 @@ GameObject:
   - component: {fileID: 711839167}
   m_Layer: 0
   m_Name: DoorTrigger
-  m_TagString: Untagged
+  m_TagString: freezer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28211,8 +28211,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 17.43039, y: 4.615987, z: 5.4860907}
-  m_Center: {x: -0.15223436, y: 1.8079908, z: 1.0791206}
+  m_Size: {x: 17.43039, y: 4.615987, z: 10.530919}
+  m_Center: {x: -0.15223436, y: 1.8079908, z: 0.65990996}
 --- !u!95 &711839168
 Animator:
   serializedVersion: 7
@@ -56151,7 +56151,7 @@ GameObject:
   - component: {fileID: 1223318135}
   m_Layer: 0
   m_Name: DoorTrigger
-  m_TagString: Untagged
+  m_TagString: freezer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56213,8 +56213,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 7.9603405, y: 9.357209, z: 8.450341}
-  m_Center: {x: 11.557772, y: 4.178604, z: 3.7251778}
+  m_Size: {x: 12.963071, y: 9.357209, z: 11.898338}
+  m_Center: {x: 12.024524, y: 4.178604, z: 5.4491696}
 --- !u!1001 &1224881308
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -93013,7 +93013,7 @@ Transform:
   m_GameObject: {fileID: 2042509295}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 11.358, y: 0.749, z: 14.02}
+  m_LocalPosition: {x: 12.87, y: 2.27, z: 12.537}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
