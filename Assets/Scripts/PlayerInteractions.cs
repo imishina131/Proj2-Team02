@@ -291,7 +291,7 @@ public class PlayerInteractions : MonoBehaviour
         }
         if(other.gameObject.tag == "exit" && !typing && end)
         {
-            SceneManager.LoadScene("EndScene");
+            SceneManager.LoadScene("FinalCutscene");
         }
         if(other.gameObject.tag == "door" && !typing)
         {

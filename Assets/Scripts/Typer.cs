@@ -811,7 +811,7 @@ public class Typer : MonoBehaviour
                     interactionsCount++;
                     if (SceneManager.GetActiveScene().name == "Level01")
                     {
-                        SceneManager.LoadScene("Level02");
+                        SceneManager.LoadScene("LoadingCutscene");
                     }
                     break;
 
@@ -854,7 +854,7 @@ public class Typer : MonoBehaviour
                 case 12:
                     interaction.SetActive(false);
                     interactionsCount ++;
-                    SceneManager.LoadScene("Level03");
+                    SceneManager.LoadScene("LoadingCutscene 1");
                     break;
 
                 case 13:
