@@ -73,9 +73,12 @@ public class Typer : MonoBehaviour
 
     public DontLookGame dontlook;
 
+    public GameObject npcTalking;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        npcTalking.SetActive(true);
         while(order01 < part01.Length)
         {
             part01[order01].SetActive(false);
@@ -871,6 +874,7 @@ public class Typer : MonoBehaviour
                     break;
                 
             }
+            npcTalking.SetActive(false);
             player.typing = false;
         }
     }

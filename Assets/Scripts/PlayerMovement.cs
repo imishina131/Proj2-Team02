@@ -26,10 +26,16 @@ public class PlayerMovement : MonoBehaviour
 
     public PlayerInteractions player;
 
+    public AudioSource audio;
+    public AudioClip walking;
+
+    bool isWalking;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        audio = GetComponent<AudioSource>();
         rb.freezeRotation = true;
         ResetJump();
     }
@@ -48,6 +54,25 @@ public class PlayerMovement : MonoBehaviour
             Jump();
 
             Invoke("ResetJump", jumpCooldown);
+        }
+        
+        if(player.typing == false)
+        {
+            if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
+            {
+                if(!isWalking)
+                {
+                    audio.clip = walking;
+                    audio.Play();
+                }
+                isWalking = true;
+            }
+
+            if(Input.GetKey(KeyCode.W) == false && Input.GetKey(KeyCode.A) == false && Input.GetKey(KeyCode.S) == false && Input.GetKey(KeyCode.D) == false)
+            {
+                audio.Stop();
+                isWalking = false;
+            }
         }
 
         if(grounded)
