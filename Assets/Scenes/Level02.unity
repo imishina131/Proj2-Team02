@@ -1285,7 +1285,7 @@ MonoBehaviour:
   airMultiplier: 0.1
   player: {fileID: 28241495}
   audio: {fileID: 0}
-  walking: {fileID: 0}
+  walking: {fileID: 8300000, guid: 7a4a91ffb1ec17545b1a8613f7f8aa19, type: 3}
 --- !u!54 &28241497
 Rigidbody:
   m_ObjectHideFlags: 0
