@@ -23,6 +23,7 @@ public class LoseAndExplode : MonoBehaviour
     {
         animator.SetTrigger("Die");
         timerObject.SetActive(false);
+        Typer.initialized = false;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         Invoke("Confetti", 2.0f);
@@ -31,7 +32,7 @@ public class LoseAndExplode : MonoBehaviour
     void Confetti()
     {
         confetti.SetActive(true);
-        Invoke("Restart", 1.5f);
+        Invoke("Restart", 1.5f); 
     }
 
     void Restart()
