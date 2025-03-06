@@ -39,19 +39,19 @@ public class MenuController : MonoBehaviour
     public void PlayEasy()
     {
         difficulty = 1;
-        SceneManager.LoadScene("Level01");
+        SceneManager.LoadScene("LoadingCutscene");
     }
 
     public void PlayMedium()
     {
         difficulty = 2;
-        SceneManager.LoadScene("Level01");
+        SceneManager.LoadScene("LoadingCutscene");
     }
 
     public void PlayHard()
     {
         difficulty = 3;
-        SceneManager.LoadScene("Level01");
+        SceneManager.LoadScene("LoadingCutscene");
     }
 
     public void Quit()
