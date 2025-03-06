@@ -1189,6 +1189,7 @@ GameObject:
   - component: {fileID: 28241496}
   - component: {fileID: 28241495}
   - component: {fileID: 28241494}
+  - component: {fileID: 28241499}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1283,6 +1284,8 @@ MonoBehaviour:
   jumpCooldown: 0.5
   airMultiplier: 0.1
   player: {fileID: 28241495}
+  audio: {fileID: 0}
+  walking: {fileID: 0}
 --- !u!54 &28241497
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1330,6 +1333,103 @@ Transform:
   - {fileID: 2008045738}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 87.749, z: 0}
+--- !u!82 &28241499
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28241493}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &29149306
 GameObject:
   m_ObjectHideFlags: 0
@@ -14086,6 +14186,8 @@ MonoBehaviour:
   initialized: 0
   typer: {fileID: 1733380433}
   eyes: {fileID: 1509806601}
+  lose: {fileID: 0}
+  interaction: {fileID: 0}
 --- !u!114 &386644561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17788,6 +17890,8 @@ MonoBehaviour:
   initialized: 0
   typer: {fileID: 1343086901}
   eyes: {fileID: 1509806601}
+  lose: {fileID: 0}
+  interaction: {fileID: 0}
 --- !u!114 &448561653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35016,6 +35120,8 @@ MonoBehaviour:
   initialized: 0
   typer: {fileID: 484241205}
   eyes: {fileID: 1509806601}
+  lose: {fileID: 0}
+  interaction: {fileID: 0}
 --- !u!114 &885172755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42563,6 +42669,8 @@ MonoBehaviour:
   initialized: 0
   typer: {fileID: 599024371}
   eyes: {fileID: 1509806601}
+  lose: {fileID: 0}
+  interaction: {fileID: 0}
 --- !u!114 &965260166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46057,6 +46165,8 @@ MonoBehaviour:
   initialized: 0
   typer: {fileID: 2092849551}
   eyes: {fileID: 1509806601}
+  lose: {fileID: 0}
+  interaction: {fileID: 0}
 --- !u!114 &1033474563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68181,6 +68291,7 @@ MonoBehaviour:
   losePanel: {fileID: 1988289317}
   player: {fileID: 28241495}
   timerObject: {fileID: 1861146185}
+  lose: {fileID: 0}
 --- !u!114 &1509806602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68197,6 +68308,7 @@ MonoBehaviour:
   sensY: 800
   orientation: {fileID: 66552235}
   player: {fileID: 28241495}
+  lookAtNPC: 0
 --- !u!81 &1509806603
 AudioListener:
   m_ObjectHideFlags: 0
@@ -70688,6 +70800,8 @@ MonoBehaviour:
   initialized: 0
   typer: {fileID: 1483353866}
   eyes: {fileID: 1509806601}
+  lose: {fileID: 0}
+  interaction: {fileID: 0}
 --- !u!114 &1580944081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72632,6 +72746,8 @@ MonoBehaviour:
   initialized: 0
   typer: {fileID: 2131795164}
   eyes: {fileID: 1509806601}
+  lose: {fileID: 0}
+  interaction: {fileID: 0}
 --- !u!114 &1639562086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81873,6 +81989,8 @@ MonoBehaviour:
   initialized: 0
   typer: {fileID: 1444544683}
   eyes: {fileID: 1509806601}
+  lose: {fileID: 0}
+  interaction: {fileID: 0}
 --- !u!114 &1939393766
 MonoBehaviour:
   m_ObjectHideFlags: 0
