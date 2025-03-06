@@ -21,11 +21,26 @@ EditorBuildSettings:
     path: Assets/Scenes/Level01.unity
     guid: 614fdc2c340d8544286ce9243793bff9
   - enabled: 1
+    path: Assets/Scenes/OptionsMenu.unity
+    guid: d9812a59d72218a479ef842cb7b497a5
+  - enabled: 1
     path: Assets/Scenes/DifficultyMenu.unity
     guid: dd40fc045670839499475d41a5a1e514
   - enabled: 1
+    path: Assets/Scenes/OpeningCutScene.unity
+    guid: 386c35a2cec318b44b87a3a30233014c
+  - enabled: 1
+    path: Assets/Scenes/FinalCutscene.unity
+    guid: cd6c405d8a8e4124b9b9f71e39aaa29d
+  - enabled: 1
+    path: Assets/Scenes/LoadingCutscene 1.unity
+    guid: 7e19b226cc158074c9a64b3ebde26d8d
+  - enabled: 1
     path: Assets/Scenes/Level02.unity
     guid: 58699fc9de48cd946bb577c96293c5af
+  - enabled: 1
+    path: Assets/Scenes/LoadingCutscene.unity
+    guid: cf50f70b6e1a05e4ab698aaf25dcdf48
   - enabled: 1
     path: Assets/Scenes/Level03.unity
     guid: 7b278ec175a17aa4080a530e2bbd685a
