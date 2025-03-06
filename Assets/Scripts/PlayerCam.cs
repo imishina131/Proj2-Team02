@@ -15,9 +15,14 @@ public class PlayerCam : MonoBehaviour
 
     public PlayerInteractions player;
 
+    public bool lookAtNPC;
+
+    Transform target;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        /*
         if(SceneManager.GetActiveScene().name == "Level01")
         {
             xRotation += 50;
@@ -28,8 +33,9 @@ public class PlayerCam : MonoBehaviour
             xRotation += 50;
             yRotation += 90;
         }
+        */
         Cursor.visible = false;
-        transform.rotation = Quaternion.Euler(50,0,0);
+        //transform.rotation = Quaternion.Euler(50,0,0);
     }
 
     // Update is called once per frame
@@ -59,5 +65,24 @@ public class PlayerCam : MonoBehaviour
                 transform.rotation = Quaternion.Euler(50,yRotation,0);
             }
         }
+
+        if(lookAtNPC)
+        {
+            transform.LookAt(target);
+        }
+    }
+
+    public void LookAt(GameObject npc)
+    {
+        lookAtNPC = true;
+        target = npc.transform;
+    }
+
+    public void LookAway()
+    {
+        lookAtNPC = false;
+        xRotation += 50;
+        yRotation += 90;
+        transform.rotation = Quaternion.Euler(50,0,0);
     }
 }

@@ -75,10 +75,13 @@ public class Typer : MonoBehaviour
 
     public GameObject npcTalking;
 
+    public LoseAndExplode lose;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         npcTalking.SetActive(true);
+        cam.LookAt(npcTalking);
         while(order01 < part01.Length)
         {
             part01[order01].SetActive(false);
@@ -214,7 +217,8 @@ public class Typer : MonoBehaviour
             {
                 timer = 0;
                 timerOn = false;
-                eyes.Lose();
+                interaction.SetActive(false);
+                lose.Explode();
             }
         }
         CheckInput();
@@ -874,6 +878,7 @@ public class Typer : MonoBehaviour
                     break;
                 
             }
+            cam.LookAway();
             npcTalking.SetActive(false);
             player.typing = false;
         }

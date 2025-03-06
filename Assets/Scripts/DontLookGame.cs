@@ -18,6 +18,10 @@ public class DontLookGame : MonoBehaviour
     public Typer typer;
 
     public RaycastScript eyes;
+
+    public LoseAndExplode lose;
+
+    public GameObject interaction;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -72,7 +76,8 @@ public class DontLookGame : MonoBehaviour
         {
             Debug.Log("Lost");
             gameObject.SetActive(false);
-            eyes.Lose();     
+            interaction.SetActive(false);
+            lose.Explode();   
         }
         else if(anchoredPosCharacter.x >= 400 && anchoredPosVision.x <= -400)
         {

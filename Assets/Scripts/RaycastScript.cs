@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RaycastScript : MonoBehaviour
 {
@@ -8,6 +9,11 @@ public class RaycastScript : MonoBehaviour
     public PlayerInteractions player;
 
     public GameObject timerObject;
+
+    Animator animator;
+
+    public LoseAndExplode lose;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -27,15 +33,8 @@ public class RaycastScript : MonoBehaviour
         if(Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 100f, mask) && player.typing == false)
         {
             Debug.Log("hit eyes");
-            Lose();
+            hit.collider.gameObject.GetComponent<LoseAndExplode>().Explode();
         }
     }
 
-    public void Lose()
-    {
-        losePanel.SetActive(true);
-        timerObject.SetActive(false);
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-    }
 }
