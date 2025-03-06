@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class Time01 : MonoBehaviour
+public class Time03 : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -18,7 +18,7 @@ public class Time01 : MonoBehaviour
 
     IEnumerator LoadScene()
     {
-        yield return new WaitForSeconds(26);
-        SceneManager.LoadScene("Level01");
+        yield return new WaitForSeconds(4);
+        SceneManager.LoadScene("Level03");
     }
 }
