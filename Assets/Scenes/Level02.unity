@@ -1265,6 +1265,7 @@ MonoBehaviour:
   doorOpen: {fileID: 8300000, guid: 440615690a1226b4b9f3e416de7f5acc, type: 3}
   miniMap: {fileID: 0}
   miniMapOutline: {fileID: 0}
+  spamRestricted: 0
 --- !u!114 &28241496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10826,7 +10827,7 @@ MonoBehaviour:
   animator: {fileID: 1836257704}
   timerObject: {fileID: 1861146185}
   confetti: {fileID: 104049711}
-  playerCam: {fileID: 0}
+  playerCam: {fileID: 1509806602}
   hitEyes: 0
 --- !u!1 &262227475
 GameObject:
@@ -15214,8 +15215,9 @@ MonoBehaviour:
   initialized: 0
   typer: {fileID: 1733380433}
   eyes: {fileID: 1509806601}
-  lose: {fileID: 0}
-  interaction: {fileID: 0}
+  lose: {fileID: 1439393639}
+  interaction: {fileID: 1439393635}
+  playerInteract: {fileID: 28241495}
 --- !u!114 &386644561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15489,7 +15491,7 @@ MonoBehaviour:
   animator: {fileID: 1337908291}
   timerObject: {fileID: 1861146185}
   confetti: {fileID: 349913947}
-  playerCam: {fileID: 0}
+  playerCam: {fileID: 1509806602}
   hitEyes: 0
 --- !u!1001 &391361852
 PrefabInstance:
@@ -19228,8 +19230,9 @@ MonoBehaviour:
   initialized: 0
   typer: {fileID: 1343086901}
   eyes: {fileID: 1509806601}
-  lose: {fileID: 0}
-  interaction: {fileID: 0}
+  lose: {fileID: 1213476084}
+  interaction: {fileID: 1213476080}
+  playerInteract: {fileID: 28241495}
 --- !u!114 &448561653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34460,7 +34463,7 @@ MonoBehaviour:
   animator: {fileID: 2047218111}
   timerObject: {fileID: 1861146185}
   confetti: {fileID: 256040093}
-  playerCam: {fileID: 0}
+  playerCam: {fileID: 1509806602}
   hitEyes: 0
 --- !u!1001 &822977547
 PrefabInstance:
@@ -37065,8 +37068,9 @@ MonoBehaviour:
   initialized: 0
   typer: {fileID: 484241205}
   eyes: {fileID: 1509806601}
-  lose: {fileID: 0}
-  interaction: {fileID: 0}
+  lose: {fileID: 262183592}
+  interaction: {fileID: 262183588}
+  playerInteract: {fileID: 28241495}
 --- !u!114 &885172755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44786,8 +44790,9 @@ MonoBehaviour:
   initialized: 0
   typer: {fileID: 599024371}
   eyes: {fileID: 1509806601}
-  lose: {fileID: 0}
-  interaction: {fileID: 0}
+  lose: {fileID: 1444582507}
+  interaction: {fileID: 1444582503}
+  playerInteract: {fileID: 28241495}
 --- !u!114 &965260166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48357,7 +48362,7 @@ MonoBehaviour:
   animator: {fileID: 1077933526}
   timerObject: {fileID: 1861146185}
   confetti: {fileID: 464170831}
-  playerCam: {fileID: 0}
+  playerCam: {fileID: 1509806602}
   hitEyes: 0
 --- !u!1001 &1029063462
 PrefabInstance:
@@ -48653,8 +48658,9 @@ MonoBehaviour:
   initialized: 0
   typer: {fileID: 2092849551}
   eyes: {fileID: 1509806601}
-  lose: {fileID: 0}
-  interaction: {fileID: 0}
+  lose: {fileID: 1105130244}
+  interaction: {fileID: 1105130240}
+  playerInteract: {fileID: 28241495}
 --- !u!114 &1033474563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55854,7 +55860,7 @@ MonoBehaviour:
   animator: {fileID: 1337908291}
   timerObject: {fileID: 1861146185}
   confetti: {fileID: 349913947}
-  playerCam: {fileID: 0}
+  playerCam: {fileID: 1509806602}
   hitEyes: 0
 --- !u!1 &1105391942
 GameObject:
@@ -60474,7 +60480,7 @@ MonoBehaviour:
   animator: {fileID: 1869265404}
   timerObject: {fileID: 1861146185}
   confetti: {fileID: 1011210234}
-  playerCam: {fileID: 0}
+  playerCam: {fileID: 1509806602}
   hitEyes: 0
 --- !u!1001 &1213942216
 PrefabInstance:
@@ -68528,7 +68534,7 @@ MonoBehaviour:
   animator: {fileID: 1983981586}
   timerObject: {fileID: 1861146185}
   confetti: {fileID: 1864312118}
-  playerCam: {fileID: 0}
+  playerCam: {fileID: 1509806602}
   hitEyes: 0
 --- !u!1001 &1440669826
 PrefabInstance:
@@ -69171,7 +69177,7 @@ MonoBehaviour:
   animator: {fileID: 1429371227}
   timerObject: {fileID: 1861146185}
   confetti: {fileID: 1464971206}
-  playerCam: {fileID: 0}
+  playerCam: {fileID: 1509806602}
   hitEyes: 0
 --- !u!1 &1444650062
 GameObject:
@@ -74608,8 +74614,9 @@ MonoBehaviour:
   initialized: 0
   typer: {fileID: 1483353866}
   eyes: {fileID: 1509806601}
-  lose: {fileID: 0}
-  interaction: {fileID: 0}
+  lose: {fileID: 1026388777}
+  interaction: {fileID: 1026388773}
+  playerInteract: {fileID: 28241495}
 --- !u!114 &1580944081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76556,8 +76563,9 @@ MonoBehaviour:
   initialized: 0
   typer: {fileID: 2131795164}
   eyes: {fileID: 1509806601}
-  lose: {fileID: 0}
-  interaction: {fileID: 0}
+  lose: {fileID: 820654744}
+  interaction: {fileID: 820654740}
+  playerInteract: {fileID: 28241495}
 --- !u!114 &1639562086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86867,8 +86875,9 @@ MonoBehaviour:
   initialized: 0
   typer: {fileID: 1444544683}
   eyes: {fileID: 1509806601}
-  lose: {fileID: 0}
-  interaction: {fileID: 0}
+  lose: {fileID: 389331610}
+  interaction: {fileID: 389331606}
+  playerInteract: {fileID: 28241495}
 --- !u!114 &1939393766
 MonoBehaviour:
   m_ObjectHideFlags: 0

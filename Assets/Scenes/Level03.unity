@@ -13725,8 +13725,9 @@ MonoBehaviour:
   initialized: 0
   typer: {fileID: 1118154371}
   eyes: {fileID: 195768130}
-  lose: {fileID: 0}
-  interaction: {fileID: 0}
+  lose: {fileID: 2000689506}
+  interaction: {fileID: 2000689502}
+  playerInteract: {fileID: 1399284002}
 --- !u!114 &522746619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27235,7 +27236,7 @@ MonoBehaviour:
   animator: {fileID: 1070341971}
   timerObject: {fileID: 1033357242}
   confetti: {fileID: 440135576}
-  playerCam: {fileID: 0}
+  playerCam: {fileID: 195768131}
   hitEyes: 0
 --- !u!1 &856553267 stripped
 GameObject:
@@ -32684,7 +32685,7 @@ MonoBehaviour:
   animator: {fileID: 1702330696}
   timerObject: {fileID: 1033357242}
   confetti: {fileID: 431054184}
-  playerCam: {fileID: 0}
+  playerCam: {fileID: 195768131}
   hitEyes: 0
 --- !u!114 &1070909363
 MonoBehaviour:
@@ -33082,8 +33083,9 @@ MonoBehaviour:
   initialized: 0
   typer: {fileID: 169065930}
   eyes: {fileID: 195768130}
-  lose: {fileID: 0}
-  interaction: {fileID: 0}
+  lose: {fileID: 1070909362}
+  interaction: {fileID: 1070909360}
+  playerInteract: {fileID: 1399284002}
 --- !u!1 &1089012646
 GameObject:
   m_ObjectHideFlags: 0
@@ -33142,8 +33144,9 @@ MonoBehaviour:
   initialized: 0
   typer: {fileID: 587448495}
   eyes: {fileID: 195768130}
-  lose: {fileID: 0}
-  interaction: {fileID: 0}
+  lose: {fileID: 1397020881}
+  interaction: {fileID: 1397020877}
+  playerInteract: {fileID: 1399284002}
 --- !u!114 &1089012649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40478,7 +40481,7 @@ MonoBehaviour:
   animator: {fileID: 350142716}
   timerObject: {fileID: 1033357242}
   confetti: {fileID: 711606118}
-  playerCam: {fileID: 0}
+  playerCam: {fileID: 195768131}
   hitEyes: 0
 --- !u!1 &1399284000
 GameObject:
@@ -40567,6 +40570,7 @@ MonoBehaviour:
   doorOpen: {fileID: 8300000, guid: 440615690a1226b4b9f3e416de7f5acc, type: 3}
   miniMap: {fileID: 0}
   miniMapOutline: {fileID: 0}
+  spamRestricted: 0
 --- !u!114 &1399284003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51887,6 +51891,7 @@ MonoBehaviour:
   eyes: {fileID: 195768130}
   lose: {fileID: 855588554}
   interaction: {fileID: 855588550}
+  playerInteract: {fileID: 1399284002}
 --- !u!114 &1792707807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68470,7 +68475,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2000689503
 RectTransform:
   m_ObjectHideFlags: 0
@@ -68554,7 +68559,7 @@ MonoBehaviour:
   animator: {fileID: 1761016267}
   timerObject: {fileID: 1033357242}
   confetti: {fileID: 188117704}
-  playerCam: {fileID: 0}
+  playerCam: {fileID: 195768131}
   hitEyes: 0
 --- !u!1001 &2001340549
 PrefabInstance:

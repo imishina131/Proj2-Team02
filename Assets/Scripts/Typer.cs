@@ -759,8 +759,11 @@ public class Typer : MonoBehaviour
         }
         else if(typedLetterChar != currentWord[lettersTyped])
         {
-            dontLookGame.SetActive(true);
-            timerOn = false;
+            if(player.spamRestricted == false)
+            {
+                dontLookGame.SetActive(true);
+                timerOn = false;
+            }
         }
     }
 

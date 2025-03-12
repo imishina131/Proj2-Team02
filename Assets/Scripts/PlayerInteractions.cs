@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class PlayerInteractions : MonoBehaviour
 {
@@ -78,6 +79,8 @@ public class PlayerInteractions : MonoBehaviour
 
     public GameObject miniMap;
     public GameObject miniMapOutline;
+
+    public bool spamRestricted;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -466,5 +469,17 @@ public class PlayerInteractions : MonoBehaviour
                 objective.text = "LEAVE";
                 break;
         }
+    }
+
+    public void StartCountdown()
+    {
+        StartCoroutine(Delay());
+    }
+
+    IEnumerator Delay()
+    {
+        spamRestricted = true;
+        yield return new WaitForSeconds(2);
+        spamRestricted = false;
     }
 }

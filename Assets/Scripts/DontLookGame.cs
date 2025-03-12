@@ -22,6 +22,8 @@ public class DontLookGame : MonoBehaviour
     public LoseAndExplode lose;
 
     public GameObject interaction;
+
+    public PlayerInteractions playerInteract;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -87,6 +89,7 @@ public class DontLookGame : MonoBehaviour
             rectTransformVision.anchoredPosition = anchoredPosVision;
             moving = false;
             typer.timerOn = true;
+            playerInteract.StartCountdown();
             gameObject.SetActive(false);
         }
     }
