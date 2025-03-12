@@ -17,7 +17,9 @@ public class PlayerCam : MonoBehaviour
 
     public bool lookAtNPC;
 
-    Transform target;
+    Vector3 target;
+    Vector3 targetOff;
+    Transform targetoff;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -68,14 +70,28 @@ public class PlayerCam : MonoBehaviour
 
         if(lookAtNPC)
         {
-            transform.LookAt(target);
+            float distance = Vector3.Distance(target, transform.position);
+            Debug.Log("distance" + distance);
+            if(distance <= 6)
+            {
+                targetOff = new Vector3(target.x, target.y - 3, target.z);
+            }
+            else if(distance > 5 && distance <= 10)
+            {
+                targetOff = new Vector3(target.x, target.y - 5, target.z);
+            }
+            else if(distance > 10)
+            {
+                targetOff = new Vector3(target.x, target.y - 7, target.z);
+            }
+            transform.LookAt(targetOff);
         }
     }
 
     public void LookAt(GameObject npc)
     {
         lookAtNPC = true;
-        target = npc.transform;
+        target = npc.transform.position;
     }
 
     public void LookAway()
@@ -85,4 +101,5 @@ public class PlayerCam : MonoBehaviour
         yRotation += 90;
         transform.rotation = Quaternion.Euler(50,0,0);
     }
+
 }
