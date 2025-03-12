@@ -39,12 +39,17 @@ public class PlayerInteractions : MonoBehaviour
     public GameObject turkey;
     public GameObject ham;
     public GameObject butter;
+    public GameObject plate;
+    public GameObject bread01;
+    public GameObject bread02;
 
     public GameObject inkInHand;
     public GameObject paperInHand;
     public GameObject turkeyInHand;
     public GameObject hamInHand;
     public GameObject butterInHand;
+    public GameObject plateInHand;
+    public GameObject breadInHand;
 
     public GameObject mouseGlow;
     public GameObject printerGlow;
@@ -53,6 +58,9 @@ public class PlayerInteractions : MonoBehaviour
     public GameObject hamGlow;
     public GameObject butterGlow;
     public GameObject cashierGlow;
+    public GameObject sinkGlow;
+    public GameObject breadstickGlow;
+    public GameObject plateGlow;
 
     public GameObject interaction01;
     public GameObject interaction02;
@@ -111,7 +119,12 @@ public class PlayerInteractions : MonoBehaviour
 
         if(SceneManager.GetActiveScene().name == "Level03")
         {
-
+            sinkGlow.SetActive(false);
+            breadstickGlow.SetActive(false);
+            plateGlow.SetActive(false);
+            bread02.SetActive(false);
+            breadInHand.SetActive(false);
+            plateInHand.SetActive(false);
             objectiveCount = 8;
         }
     }
@@ -455,18 +468,30 @@ public class PlayerInteractions : MonoBehaviour
 
             case 8:
                 objective.text = "Grab the breadsticks";
+                breadstickGlow.SetActive(true);
                 break;
 
             case 9:
                 objective.text = "Place the breadsticks on the table";
+                breadstickGlow.SetActive(false);
+                bread01.SetActive(false);
+                breadInHand.SetActive(true);
+                plateGlow.SetActive(true);
                 break;
 
             case 10:
                 objective.text = "Put your dish in the sink";
+                plateGlow.SetActive(false);
+                breadInHand.SetActive(false);
+                bread02.SetActive(true);
+                plateInHand.SetActive(true);
+                sinkGlow.SetActive(true);
                 break;
 
             case 11:
                 objective.text = "LEAVE";
+                plateInHand.SetActive(false);
+                sinkGlow.SetActive(false);
                 break;
         }
     }
