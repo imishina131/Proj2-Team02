@@ -38,10 +38,10 @@ public class LevelChanger : MonoBehaviour
 
     public void FadeToLevel(string levelName)
     {
-        musicObject = GameObject.FindGameObjectWithTag("Music");
-        music = musicObject.GetComponent<AudioSource>();
         if(SceneManager.GetActiveScene().name == "OptionsMenu")
         {
+            musicObject = GameObject.FindGameObjectWithTag("Music");
+            music = musicObject.GetComponent<AudioSource>();
             if(maxMusicVolume == null)
             {
                 maxMusicVolume = 0.18f;

@@ -147,6 +147,7 @@ public class PlayerInteractions : MonoBehaviour
         if(text03 == true)
         {
             interaction03.SetActive(true);
+            interaction02.SetActive(false);
         }
         if(!typing)
         {
