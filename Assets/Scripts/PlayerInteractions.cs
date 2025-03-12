@@ -76,7 +76,8 @@ public class PlayerInteractions : MonoBehaviour
     public AudioClip doorClose;
     public AudioClip doorOpen;
 
-
+    public GameObject miniMap;
+    public GameObject miniMapOutline;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -115,6 +116,11 @@ public class PlayerInteractions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(MenuController.difficulty == 3)
+        {
+            miniMap.SetActive(false);
+            miniMapOutline.SetActive(false);
+        }
         UpdateObjective();
         Debug.Log("in ink:" + inInkZone);
         if(text03 == true)

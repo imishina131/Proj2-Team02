@@ -223,6 +223,7 @@ public class Typer : MonoBehaviour
                 timerOn = false;
                 interaction.SetActive(false);
                 lose.Explode();
+                Invoke("Destroy", 3.0f);
                 cam.Stare(npcTalking);
             }
         }
@@ -230,6 +231,10 @@ public class Typer : MonoBehaviour
         Debug.Log("dialogue status: " + interactionsCount);
     }
 
+    void Destroy()
+    {
+        npcTalking.SetActive(false);
+    }
     void updateTimer(float currentTime)
     {
         currentTime += 1;

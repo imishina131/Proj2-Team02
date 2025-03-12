@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class RaycastScript : MonoBehaviour
 {
@@ -36,7 +37,14 @@ public class RaycastScript : MonoBehaviour
             Debug.Log("hit eyes");
             hit.collider.gameObject.GetComponent<LoseAndExplode>().hitEyes = true;
             hit.collider.gameObject.GetComponent<LoseAndExplode>().Explode();
+            StartCoroutine(Destroy(hit));
         }
+    }
+
+    IEnumerator Destroy(RaycastHit hit)
+    {
+        yield return new WaitForSeconds(3);
+        hit.collider.gameObject.SetActive(false);
     }
 
 }

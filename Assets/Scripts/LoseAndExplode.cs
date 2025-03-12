@@ -34,7 +34,7 @@ public class LoseAndExplode : MonoBehaviour
         Typer.initialized = false;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        Invoke("Confetti", 2.0f);
+        Invoke("Confetti", 3.0f);
     }
 
     void Confetti()
