@@ -368,6 +368,22 @@ public class RandomTyper : MonoBehaviour
                     order++;
                 }
             }
+            if(SceneManager.GetActiveScene().name == "Level02")
+            {
+                while(order < part03.Length)
+                {
+                    part03[order].SetActive(true);
+                    order++;
+                }
+            }
+            if(SceneManager.GetActiveScene().name == "Level03")
+            {
+                while(order < part03.Length)
+                {
+                    part03[order].SetActive(true);
+                    order++;
+                }
+            }
             timerOn = false;
             StartCoroutine(Deactivate());
 
