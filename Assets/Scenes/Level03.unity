@@ -5671,6 +5671,7 @@ MonoBehaviour:
   orientation: {fileID: 249936658}
   player: {fileID: 1399284002}
   lookAtNPC: 0
+  exploding: 0
 --- !u!81 &195768132
 AudioListener:
   m_ObjectHideFlags: 0
@@ -5865,6 +5866,8 @@ MonoBehaviour:
   animator: {fileID: 503564943}
   timerObject: {fileID: 1033357242}
   confetti: {fileID: 2096400503}
+  playerCam: {fileID: 195768131}
+  hitEyes: 0
 --- !u!1 &219019770
 GameObject:
   m_ObjectHideFlags: 0
@@ -22777,6 +22780,8 @@ MonoBehaviour:
   animator: {fileID: 1290041455}
   timerObject: {fileID: 1033357242}
   confetti: {fileID: 2136615987}
+  playerCam: {fileID: 195768131}
+  hitEyes: 0
 --- !u!1001 &672796885
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23400,6 +23405,8 @@ MonoBehaviour:
   animator: {fileID: 1218464115}
   timerObject: {fileID: 1033357242}
   confetti: {fileID: 115781723}
+  playerCam: {fileID: 195768131}
+  hitEyes: 0
 --- !u!1 &703452293
 GameObject:
   m_ObjectHideFlags: 0
@@ -27252,6 +27259,8 @@ MonoBehaviour:
   animator: {fileID: 1070341971}
   timerObject: {fileID: 1033357242}
   confetti: {fileID: 440135576}
+  playerCam: {fileID: 0}
+  hitEyes: 0
 --- !u!1 &856553267 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 953152184754809359, guid: 2102bc1a0488fb342b1481e5e7117588, type: 3}
@@ -28746,6 +28755,8 @@ MonoBehaviour:
   animator: {fileID: 1999891249}
   timerObject: {fileID: 1033357242}
   confetti: {fileID: 856553267}
+  playerCam: {fileID: 195768131}
+  hitEyes: 0
 --- !u!1 &906614825
 GameObject:
   m_ObjectHideFlags: 0
@@ -32705,6 +32716,8 @@ MonoBehaviour:
   animator: {fileID: 1702330696}
   timerObject: {fileID: 1033357242}
   confetti: {fileID: 431054184}
+  playerCam: {fileID: 0}
+  hitEyes: 0
 --- !u!114 &1070909363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38531,6 +38544,8 @@ MonoBehaviour:
   animator: {fileID: 1007798436}
   timerObject: {fileID: 1033357242}
   confetti: {fileID: 1918283598}
+  playerCam: {fileID: 195768131}
+  hitEyes: 0
 --- !u!1001 &1323064248
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40489,6 +40504,8 @@ MonoBehaviour:
   animator: {fileID: 350142716}
   timerObject: {fileID: 1033357242}
   confetti: {fileID: 711606118}
+  playerCam: {fileID: 0}
+  hitEyes: 0
 --- !u!1 &1399284000
 GameObject:
   m_ObjectHideFlags: 0
@@ -68551,6 +68568,8 @@ MonoBehaviour:
   animator: {fileID: 1761016267}
   timerObject: {fileID: 1033357242}
   confetti: {fileID: 188117704}
+  playerCam: {fileID: 0}
+  hitEyes: 0
 --- !u!1001 &2001340549
 PrefabInstance:
   m_ObjectHideFlags: 0

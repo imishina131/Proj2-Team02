@@ -14,6 +14,7 @@ public class RaycastScript : MonoBehaviour
 
     public LoseAndExplode lose;
 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -33,6 +34,7 @@ public class RaycastScript : MonoBehaviour
         if(Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 100f, mask) && player.typing == false)
         {
             Debug.Log("hit eyes");
+            hit.collider.gameObject.GetComponent<LoseAndExplode>().hitEyes = true;
             hit.collider.gameObject.GetComponent<LoseAndExplode>().Explode();
         }
     }

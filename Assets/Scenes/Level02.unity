@@ -2952,6 +2952,8 @@ MonoBehaviour:
   animator: {fileID: 1923114322}
   timerObject: {fileID: 1861146185}
   confetti: {fileID: 1754368115}
+  playerCam: {fileID: 1509806602}
+  hitEyes: 0
 --- !u!1 &86428709
 GameObject:
   m_ObjectHideFlags: 0
@@ -10830,6 +10832,8 @@ MonoBehaviour:
   animator: {fileID: 1836257704}
   timerObject: {fileID: 1861146185}
   confetti: {fileID: 104049711}
+  playerCam: {fileID: 0}
+  hitEyes: 0
 --- !u!1 &262227475
 GameObject:
   m_ObjectHideFlags: 0
@@ -11814,6 +11818,8 @@ MonoBehaviour:
   animator: {fileID: 678851073}
   timerObject: {fileID: 1861146185}
   confetti: {fileID: 2125539028}
+  playerCam: {fileID: 1509806602}
+  hitEyes: 0
 --- !u!1001 &296861051
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14840,6 +14846,8 @@ MonoBehaviour:
   animator: {fileID: 1836257704}
   timerObject: {fileID: 1861146185}
   confetti: {fileID: 104049711}
+  playerCam: {fileID: 1509806602}
+  hitEyes: 0
 --- !u!1001 &371505478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15490,6 +15498,8 @@ MonoBehaviour:
   animator: {fileID: 1337908291}
   timerObject: {fileID: 1861146185}
   confetti: {fileID: 349913947}
+  playerCam: {fileID: 0}
+  hitEyes: 0
 --- !u!1001 &391361852
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15954,6 +15964,8 @@ MonoBehaviour:
   animator: {fileID: 321990587}
   timerObject: {fileID: 1861146185}
   confetti: {fileID: 1150665385}
+  playerCam: {fileID: 1509806602}
+  hitEyes: 0
 --- !u!1001 &414411149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20787,6 +20799,8 @@ MonoBehaviour:
   animator: {fileID: 1337908291}
   timerObject: {fileID: 1861146185}
   confetti: {fileID: 349913947}
+  playerCam: {fileID: 1509806602}
+  hitEyes: 0
 --- !u!1001 &481216052
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34424,6 +34438,8 @@ MonoBehaviour:
   animator: {fileID: 2047218111}
   timerObject: {fileID: 1861146185}
   confetti: {fileID: 256040093}
+  playerCam: {fileID: 0}
+  hitEyes: 0
 --- !u!1001 &822977547
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48322,6 +48338,8 @@ MonoBehaviour:
   animator: {fileID: 1077933526}
   timerObject: {fileID: 1861146185}
   confetti: {fileID: 464170831}
+  playerCam: {fileID: 0}
+  hitEyes: 0
 --- !u!1001 &1029063462
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55822,6 +55840,8 @@ MonoBehaviour:
   animator: {fileID: 1337908291}
   timerObject: {fileID: 1861146185}
   confetti: {fileID: 349913947}
+  playerCam: {fileID: 0}
+  hitEyes: 0
 --- !u!1 &1105391942
 GameObject:
   m_ObjectHideFlags: 0
@@ -60440,6 +60460,8 @@ MonoBehaviour:
   animator: {fileID: 1869265404}
   timerObject: {fileID: 1861146185}
   confetti: {fileID: 1011210234}
+  playerCam: {fileID: 0}
+  hitEyes: 0
 --- !u!1001 &1213942216
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68493,6 +68515,8 @@ MonoBehaviour:
   animator: {fileID: 1983981586}
   timerObject: {fileID: 1861146185}
   confetti: {fileID: 1864312118}
+  playerCam: {fileID: 0}
+  hitEyes: 0
 --- !u!1001 &1440669826
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69130,6 +69154,8 @@ MonoBehaviour:
   animator: {fileID: 1429371227}
   timerObject: {fileID: 1861146185}
   confetti: {fileID: 1464971206}
+  playerCam: {fileID: 0}
+  hitEyes: 0
 --- !u!1 &1444650062
 GameObject:
   m_ObjectHideFlags: 0
@@ -71974,6 +72000,7 @@ MonoBehaviour:
   orientation: {fileID: 66552235}
   player: {fileID: 28241495}
   lookAtNPC: 0
+  exploding: 0
 --- !u!81 &1509806603
 AudioListener:
   m_ObjectHideFlags: 0
@@ -84811,6 +84838,8 @@ MonoBehaviour:
   animator: {fileID: 1983981586}
   timerObject: {fileID: 1861146185}
   confetti: {fileID: 1864312118}
+  playerCam: {fileID: 1509806602}
+  hitEyes: 0
 --- !u!1 &1880293663
 GameObject:
   m_ObjectHideFlags: 0
@@ -87504,6 +87533,8 @@ MonoBehaviour:
   animator: {fileID: 1869265404}
   timerObject: {fileID: 1861146185}
   confetti: {fileID: 1011210234}
+  playerCam: {fileID: 1509806602}
+  hitEyes: 0
 --- !u!1001 &1973809815
 PrefabInstance:
   m_ObjectHideFlags: 0

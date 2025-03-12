@@ -21,6 +21,8 @@ public class PlayerCam : MonoBehaviour
     Vector3 targetOff;
     Transform targetoff;
 
+    public bool exploding;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -43,7 +45,7 @@ public class PlayerCam : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(player.typing == false)
+        if(player.typing == false && !exploding)
         {
             float mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * sensX;
             float mouseY = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * sensY;
@@ -86,6 +88,11 @@ public class PlayerCam : MonoBehaviour
             }
             transform.LookAt(targetOff);
         }
+
+        if(exploding)
+        {
+            transform.LookAt(target);
+        }
     }
 
     public void LookAt(GameObject npc)
@@ -100,6 +107,13 @@ public class PlayerCam : MonoBehaviour
         xRotation += 50;
         yRotation += 90;
         transform.rotation = Quaternion.Euler(50,0,0);
+    }
+
+    public void Stare(GameObject npc)
+    {
+        exploding = true;
+        lookAtNPC = false;
+        target = npc.transform.position;
     }
 
 }

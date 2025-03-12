@@ -219,6 +219,7 @@ public class Typer : MonoBehaviour
                 timerOn = false;
                 interaction.SetActive(false);
                 lose.Explode();
+                cam.Stare(npcTalking);
             }
         }
         CheckInput();

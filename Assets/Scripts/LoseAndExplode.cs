@@ -7,6 +7,10 @@ public class LoseAndExplode : MonoBehaviour
     public GameObject timerObject;
     public GameObject confetti;
 
+    public PlayerCam playerCam;
+
+    public bool hitEyes;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,6 +25,10 @@ public class LoseAndExplode : MonoBehaviour
 
     public void Explode()
     {
+        if(hitEyes)
+        {
+            playerCam.Stare(this.gameObject);
+        }
         animator.SetTrigger("Die");
         timerObject.SetActive(false);
         Typer.initialized = false;
