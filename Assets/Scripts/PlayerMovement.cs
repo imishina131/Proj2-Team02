@@ -74,6 +74,11 @@ public class PlayerMovement : MonoBehaviour
                 isWalking = false;
             }
         }
+        else if(player.typing == true)
+        {
+            audio.Stop();
+            isWalking = false;
+        }
 
         if(grounded)
         {
