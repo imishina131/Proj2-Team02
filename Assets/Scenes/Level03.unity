@@ -9484,12 +9484,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2000689502}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: lastSentence
+      value: 
+      objectReference: {fileID: 1553628745}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: interaction01
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: part01.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: part02.Array.size
@@ -9518,7 +9522,7 @@ PrefabInstance:
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: 'part02.Array.data[1]'
       value: 
-      objectReference: {fileID: 2073526529}
+      objectReference: {fileID: 1843399395}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: 'part03.Array.data[0]'
       value: 
@@ -9526,7 +9530,7 @@ PrefabInstance:
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: 'part03.Array.data[1]'
       value: 
-      objectReference: {fileID: 1841754795}
+      objectReference: {fileID: 2073526529}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: 'part04.Array.data[0]'
       value: 
@@ -9534,7 +9538,7 @@ PrefabInstance:
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: 'part04.Array.data[1]'
       value: 
-      objectReference: {fileID: 1553628745}
+      objectReference: {fileID: 1841754795}
     - target: {fileID: 5743018437672970050, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.3999996
@@ -39566,6 +39570,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1089012646}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: lastSentence
+      value: 
+      objectReference: {fileID: 1851483179}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: interaction01
       value: 
       objectReference: {fileID: 0}
@@ -39579,7 +39587,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: part01.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: part02.Array.size
@@ -39591,7 +39599,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: part04.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: part05.Array.size
@@ -39599,7 +39607,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: part06.Array.size
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: part07.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: 'part01.Array.data[0]'
@@ -39616,7 +39628,7 @@ PrefabInstance:
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: 'part02.Array.data[1]'
       value: 
-      objectReference: {fileID: 1798331771}
+      objectReference: {fileID: 1787642832}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: 'part03.Array.data[0]'
       value: 
@@ -39624,11 +39636,11 @@ PrefabInstance:
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: 'part03.Array.data[1]'
       value: 
-      objectReference: {fileID: 891369058}
+      objectReference: {fileID: 1798331771}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: 'part04.Array.data[0]'
       value: 
-      objectReference: {fileID: 1597739030}
+      objectReference: {fileID: 891369058}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: 'part04.Array.data[1]'
       value: 
@@ -39636,15 +39648,19 @@ PrefabInstance:
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: 'part05.Array.data[0]'
       value: 
-      objectReference: {fileID: 740554942}
+      objectReference: {fileID: 706726807}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: 'part05.Array.data[1]'
       value: 
-      objectReference: {fileID: 1699974551}
+      objectReference: {fileID: 1597739030}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: 'part06.Array.data[0]'
       value: 
-      objectReference: {fileID: 1851483179}
+      objectReference: {fileID: 740554942}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: 'part06.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1699974551}
     - target: {fileID: 5743018437672970050, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.3999996
@@ -55184,24 +55200,32 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1077635502}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: lastSentence
+      value: 
+      objectReference: {fileID: 1280389641}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: interaction01
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: part01.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: part02.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: part03.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: part04.Array.size
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: part05.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: 'part01.Array.data[0]'
@@ -55214,7 +55238,7 @@ PrefabInstance:
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: 'part02.Array.data[0]'
       value: 
-      objectReference: {fileID: 160905920}
+      objectReference: {fileID: 1929586453}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: 'part02.Array.data[1]'
       value: 
@@ -55222,15 +55246,27 @@ PrefabInstance:
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: 'part03.Array.data[0]'
       value: 
-      objectReference: {fileID: 1589894280}
+      objectReference: {fileID: 517477550}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: 'part03.Array.data[1]'
       value: 
-      objectReference: {fileID: 1498469048}
+      objectReference: {fileID: 1350902764}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: 'part04.Array.data[0]'
       value: 
-      objectReference: {fileID: 1280389641}
+      objectReference: {fileID: 160905920}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: 'part04.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1350902764}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: 'part05.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1589894280}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: 'part05.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1498469048}
     - target: {fileID: 5743018437672970050, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.3999996
@@ -68484,7 +68520,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2000689503
 RectTransform:
   m_ObjectHideFlags: 0
@@ -70523,12 +70559,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1792707804}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: lastSentence
+      value: 
+      objectReference: {fileID: 1408945470}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: interaction01
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: part01.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: part02.Array.size
@@ -70557,7 +70597,7 @@ PrefabInstance:
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: 'part02.Array.data[1]'
       value: 
-      objectReference: {fileID: 1721626513}
+      objectReference: {fileID: 547101127}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: 'part03.Array.data[0]'
       value: 
@@ -70565,11 +70605,11 @@ PrefabInstance:
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: 'part03.Array.data[1]'
       value: 
-      objectReference: {fileID: 78194857}
+      objectReference: {fileID: 1721626513}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: 'part04.Array.data[0]'
       value: 
-      objectReference: {fileID: 1408945470}
+      objectReference: {fileID: 78194857}
     - target: {fileID: 5743018437672970050, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.3999996

@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class Typer : MonoBehaviour
 {
@@ -77,9 +78,12 @@ public class Typer : MonoBehaviour
 
     public LoseAndExplode lose;
 
+    public GameObject lastSentence;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        lastSentence.SetActive(false);
         npcTalking.SetActive(true);
         cam.LookAt(npcTalking);
         while(order01 < part01.Length)
@@ -778,7 +782,7 @@ public class Typer : MonoBehaviour
         {
             timerOn = false;
             dialogueCount++;
-            Invoke("SetCurrentWord", 5.0f);
+            Invoke("SetCurrentWord", 1.0f);
         }
         else
         {
@@ -786,29 +790,29 @@ public class Typer : MonoBehaviour
             switch(interactionsCount)
             {
                 case 0:
-                    interaction.SetActive(false);
+                    StartCoroutine(Deactivate());
                     interactionsCount ++;
                     break;
 
                 case 1:
                     player.text03 = true;
-                    interaction.SetActive(false);
+                    StartCoroutine(Deactivate());
                     interactionsCount ++;
                     break;
 
                 case 2:
                     player.text03 = false;
-                    interaction.SetActive(false);
+                    StartCoroutine(Deactivate());
                     interactionsCount ++;
                     break;
 
                 case 3:
-                    interaction.SetActive(false);
+                    StartCoroutine(Deactivate());
                     interactionsCount ++;
                     break;
 
                 case 4:
-                    interaction.SetActive(false);
+                    StartCoroutine(Deactivate());
                     interactionsCount++;
                     if (SceneManager.GetActiveScene().name == "Level01")
                     {
@@ -817,71 +821,77 @@ public class Typer : MonoBehaviour
                     break;
 
                 case 5:
-                    interaction.SetActive(false);
+                    StartCoroutine(Deactivate());
                     interactionsCount ++;
                     nextDialogue = false;
                 break;
 
                 case 6:
-                    interaction.SetActive(false);
+                    StartCoroutine(Deactivate());
                     interactionsCount ++;
                     break;
 
                 case 7:
-                    interaction.SetActive(false);
+                    StartCoroutine(Deactivate());
                     interactionsCount ++;
                     break;
 
                 case 8:
-                    interaction.SetActive(false);
+                    StartCoroutine(Deactivate());
                     interactionsCount ++;
                     break;
 
                 case 9:
-                    interaction.SetActive(false);
+                    StartCoroutine(Deactivate());
                     interactionsCount ++;
                     break;
 
                 case 10:
-                    interaction.SetActive(false);
+                    StartCoroutine(Deactivate());
                     interactionsCount ++;
                     break;
 
                 case 11:
-                    interaction.SetActive(false);
+                    StartCoroutine(Deactivate());
                     interactionsCount ++;
                     break;
 
                 case 12:
-                    interaction.SetActive(false);
+                    StartCoroutine(Deactivate());
                     interactionsCount ++;
                     SceneManager.LoadScene("LoadingCutscene 1");
                     break;
 
                 case 13:
-                    interaction.SetActive(false);
+                    StartCoroutine(Deactivate());
                     interactionsCount ++;
                     break;
 
                 case 14:
-                    interaction.SetActive(false);
+                    StartCoroutine(Deactivate());
                     interactionsCount ++;
                     break;
 
                 case 15:
-                    interaction.SetActive(false);
+                    StartCoroutine(Deactivate());
                     interactionsCount ++;
                     break;
 
                 case 16:
-                    interaction.SetActive(false);
+                    StartCoroutine(Deactivate());
                     interactionsCount ++;
                     break;
-                
             }
-            cam.LookAway();
-            npcTalking.SetActive(false);
-            player.typing = false;
         }
+    }
+
+    IEnumerator Deactivate()
+    {
+        lastSentence.SetActive(true);
+        yield return new WaitForSeconds(4);
+        interaction.SetActive(false);
+        cam.LookAway();
+        npcTalking.SetActive(false);
+        player.typing = false;
     }
 }
