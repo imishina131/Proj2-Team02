@@ -6385,6 +6385,7 @@ MonoBehaviour:
   confetti: {fileID: 2096400503}
   playerCam: {fileID: 195768131}
   hitEyes: 0
+  transition: {fileID: 1969033502}
 --- !u!1 &219019770
 GameObject:
   m_ObjectHideFlags: 0
@@ -10091,6 +10092,10 @@ PrefabInstance:
       propertyPath: npcTalking
       value: 
       objectReference: {fileID: 1761016266}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 1969033502}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: workOutput
       value: 
@@ -14681,6 +14686,7 @@ RectTransform:
   - {fileID: 2000689503}
   - {fileID: 1611057277}
   - {fileID: 1131053477}
+  - {fileID: 1969033501}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -24166,6 +24172,7 @@ MonoBehaviour:
   confetti: {fileID: 2136615987}
   playerCam: {fileID: 195768131}
   hitEyes: 0
+  transition: {fileID: 1969033502}
 --- !u!1001 &672796885
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24791,6 +24798,7 @@ MonoBehaviour:
   confetti: {fileID: 115781723}
   playerCam: {fileID: 195768131}
   hitEyes: 0
+  transition: {fileID: 1969033502}
 --- !u!1 &703452293
 GameObject:
   m_ObjectHideFlags: 0
@@ -29196,6 +29204,7 @@ MonoBehaviour:
   confetti: {fileID: 440135576}
   playerCam: {fileID: 195768131}
   hitEyes: 0
+  transition: {fileID: 0}
 --- !u!1 &856553267 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 953152184754809359, guid: 2102bc1a0488fb342b1481e5e7117588, type: 3}
@@ -30694,6 +30703,7 @@ MonoBehaviour:
   confetti: {fileID: 856553267}
   playerCam: {fileID: 195768131}
   hitEyes: 0
+  transition: {fileID: 1969033502}
 --- !u!1 &906614825
 GameObject:
   m_ObjectHideFlags: 0
@@ -34884,6 +34894,7 @@ MonoBehaviour:
   confetti: {fileID: 431054184}
   playerCam: {fileID: 195768131}
   hitEyes: 0
+  transition: {fileID: 0}
 --- !u!114 &1070909363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41444,6 +41455,7 @@ MonoBehaviour:
   confetti: {fileID: 1918283598}
   playerCam: {fileID: 195768131}
   hitEyes: 0
+  transition: {fileID: 1969033502}
 --- !u!1 &1318072668
 GameObject:
   m_ObjectHideFlags: 0
@@ -42660,6 +42672,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 350142715}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 1969033502}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: workOutput
       value: 
       objectReference: {fileID: 1865929621}
@@ -43777,6 +43793,7 @@ MonoBehaviour:
   confetti: {fileID: 711606118}
   playerCam: {fileID: 195768131}
   hitEyes: 0
+  transition: {fileID: 0}
 --- !u!1 &1399284000
 GameObject:
   m_ObjectHideFlags: 0
@@ -43810,6 +43827,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56a65ce0b71ac5946849c4057a3efe16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transition: {fileID: 1969033502}
 --- !u!114 &1399284002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43874,6 +43892,7 @@ MonoBehaviour:
   miniMapOutline: {fileID: 0}
   spamRestricted: 0
   randomConvo: {fileID: 1611057273}
+  transition: {fileID: 1969033502}
 --- !u!114 &1399284003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46505,6 +46524,7 @@ MonoBehaviour:
   confetti: {fileID: 1778581262}
   playerCam: {fileID: 195768131}
   hitEyes: 0
+  transition: {fileID: 1969033502}
 --- !u!65 &1465463065
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47137,6 +47157,104 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.959937, y: 9.064368, z: 4.4}
   m_Center: {x: -0.11485386, y: 4.532184, z: -0.0000038146973}
+--- !u!1 &1493937307
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1493937308}
+  - component: {fileID: 1493937311}
+  - component: {fileID: 1493937310}
+  - component: {fileID: 1493937309}
+  m_Layer: 5
+  m_Name: Fade
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1493937308
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493937307}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1969033501}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 699.99994, y: 349.99997}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1493937309
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493937307}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b6f0835e4e78b044db76ec241401a6ad, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1493937310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493937307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1493937311
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493937307}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1495229263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51245,6 +51363,7 @@ MonoBehaviour:
   confetti: {fileID: 1778581262}
   playerCam: {fileID: 195768131}
   hitEyes: 0
+  transition: {fileID: 0}
 --- !u!114 &1611057275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60379,6 +60498,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1702330695}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 1969033502}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: workOutput
       value: 
       objectReference: {fileID: 1070977859}
@@ -60588,7 +60711,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 81d63fd88ad15604abcabde123612a65, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ed1eb1bf76300eb43866f4558a6f8706, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -72399,6 +72522,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1968818907}
   m_CullTransparentMesh: 1
+--- !u!1 &1969033500
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1969033501}
+  - component: {fileID: 1969033502}
+  m_Layer: 5
+  m_Name: LevelChanger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1969033501
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969033500}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1493937308}
+  m_Father: {fileID: 516070414}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.00012207031, y: 0.000061035156}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1969033502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969033500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ed5936f7d0f6b469de16e2d8d08fa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1493937309}
+  ambience: {fileID: 1114965087}
+  sfx: {fileID: 898132501}
+  music: {fileID: 1961907586}
 --- !u!1 &1971531369
 GameObject:
   m_ObjectHideFlags: 0
@@ -74328,6 +74504,7 @@ MonoBehaviour:
   confetti: {fileID: 188117704}
   playerCam: {fileID: 195768131}
   hitEyes: 0
+  transition: {fileID: 0}
 --- !u!82 &2000689507
 AudioSource:
   m_ObjectHideFlags: 0
@@ -76353,6 +76530,10 @@ PrefabInstance:
       propertyPath: npcTalking
       value: 
       objectReference: {fileID: 1070341970}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 1969033502}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: workOutput
       value: 

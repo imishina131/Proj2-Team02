@@ -11,6 +11,8 @@ public class LoseAndExplode : MonoBehaviour
 
     public bool hitEyes;
 
+    public LevelChanger transition;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -40,7 +42,7 @@ public class LoseAndExplode : MonoBehaviour
     void Confetti()
     {
         confetti.SetActive(true);
-        Invoke("Restart", 1.5f); 
+        transition.FadeToLevel(SceneManager.GetActiveScene().name);
     }
 
     void Restart()

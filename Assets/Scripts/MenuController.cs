@@ -5,6 +5,8 @@ public class MenuController : MonoBehaviour
 {
 
     static public int difficulty = 0;
+
+    public LevelChanger transition;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,35 +25,41 @@ public class MenuController : MonoBehaviour
 
     public void GoToMainMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        transition.FadeToLevel("MainMenu");
+        //SceneManager.LoadScene("MainMenu");
     }
 
     public void GoToHelp()
     {
-        SceneManager.LoadScene("HelpMenu");
+        transition.FadeToLevel("HelpMenu");
+        //SceneManager.LoadScene("HelpMenu");
     }
 
     public void GoToCredits()
     {
-        SceneManager.LoadScene("CreditsMenu");
+        transition.FadeToLevel("CreditsMenu");
+        //SceneManager.LoadScene("CreditsMenu");
     }
 
     public void PlayEasy()
     {
         difficulty = 1;
-        SceneManager.LoadScene("OpeningCutScene");
+        transition.FadeToLevel("OpeningCutScene");
+        //SceneManager.LoadScene("OpeningCutScene");
     }
 
     public void PlayMedium()
     {
         difficulty = 2;
-        SceneManager.LoadScene("OpeningCutScene1");
+        transition.FadeToLevel("OpeningCutScene");
+        //SceneManager.LoadScene("OpeningCutScene1");
     }
 
     public void PlayHard()
     {
         difficulty = 3;
-        SceneManager.LoadScene("OpeningCutScene");
+        transition.FadeToLevel("OpeningCutScene");
+        //SceneManager.LoadScene("OpeningCutScene");
     }
 
     public void Quit()
@@ -61,13 +69,15 @@ public class MenuController : MonoBehaviour
 
     public void ChooseDifficulty()
     {
-        SceneManager.LoadScene("DifficultyMenu");
+        transition.FadeToLevel("DifficultyMenu");
+        //SceneManager.LoadScene("DifficultyMenu");
     }
 
     public void Restart()
     {
         PlayerInteractions.objectiveCount = 0;
         Typer.initialized = false;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        transition.FadeToLevel(SceneManager.GetActiveScene().name);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

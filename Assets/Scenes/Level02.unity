@@ -1211,6 +1211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56a65ce0b71ac5946849c4057a3efe16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transition: {fileID: 1619068121}
 --- !u!114 &28241495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1275,6 +1276,7 @@ MonoBehaviour:
   miniMapOutline: {fileID: 0}
   spamRestricted: 0
   randomConvo: {fileID: 1636762274}
+  transition: {fileID: 1619068121}
 --- !u!114 &28241496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2965,6 +2967,7 @@ MonoBehaviour:
   confetti: {fileID: 1754368115}
   playerCam: {fileID: 1509806602}
   hitEyes: 0
+  transition: {fileID: 1619068121}
 --- !u!1 &86428709
 GameObject:
   m_ObjectHideFlags: 0
@@ -11197,6 +11200,7 @@ MonoBehaviour:
   confetti: {fileID: 104049711}
   playerCam: {fileID: 1509806602}
   hitEyes: 0
+  transition: {fileID: 0}
 --- !u!1 &262227475
 GameObject:
   m_ObjectHideFlags: 0
@@ -12258,6 +12262,7 @@ MonoBehaviour:
   confetti: {fileID: 2125539028}
   playerCam: {fileID: 1509806602}
   hitEyes: 0
+  transition: {fileID: 1619068121}
 --- !u!1001 &296861051
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15422,6 +15427,7 @@ MonoBehaviour:
   confetti: {fileID: 104049711}
   playerCam: {fileID: 1509806602}
   hitEyes: 0
+  transition: {fileID: 1619068121}
 --- !u!1001 &371505478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16073,6 +16079,7 @@ MonoBehaviour:
   confetti: {fileID: 349913947}
   playerCam: {fileID: 1509806602}
   hitEyes: 0
+  transition: {fileID: 0}
 --- !u!1001 &391361852
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16539,6 +16546,7 @@ MonoBehaviour:
   confetti: {fileID: 1150665385}
   playerCam: {fileID: 1509806602}
   hitEyes: 0
+  transition: {fileID: 1619068121}
 --- !u!1001 &414411149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21800,6 +21808,7 @@ MonoBehaviour:
   confetti: {fileID: 349913947}
   playerCam: {fileID: 1509806602}
   hitEyes: 0
+  transition: {fileID: 1619068121}
 --- !u!1001 &481216052
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21955,6 +21964,10 @@ PrefabInstance:
       propertyPath: npcTalking
       value: 
       objectReference: {fileID: 321990585}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 1619068121}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: workOutput
       value: 
@@ -27149,6 +27162,10 @@ PrefabInstance:
       propertyPath: npcTalking
       value: 
       objectReference: {fileID: 1429371226}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 1619068121}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: workOutput
       value: 
@@ -36069,6 +36086,7 @@ MonoBehaviour:
   confetti: {fileID: 256040093}
   playerCam: {fileID: 1509806602}
   hitEyes: 0
+  transition: {fileID: 0}
 --- !u!1001 &822977547
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49673,6 +49691,7 @@ RectTransform:
   - {fileID: 1861146186}
   - {fileID: 1988289318}
   - {fileID: 1623452883}
+  - {fileID: 1619068120}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -50319,6 +50338,7 @@ MonoBehaviour:
   confetti: {fileID: 464170831}
   playerCam: {fileID: 1509806602}
   hitEyes: 0
+  transition: {fileID: 0}
 --- !u!1001 &1029063462
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57957,6 +57977,7 @@ MonoBehaviour:
   confetti: {fileID: 349913947}
   playerCam: {fileID: 1509806602}
   hitEyes: 0
+  transition: {fileID: 0}
 --- !u!1 &1105391942
 GameObject:
   m_ObjectHideFlags: 0
@@ -62786,6 +62807,7 @@ MonoBehaviour:
   confetti: {fileID: 1011210234}
   playerCam: {fileID: 1509806602}
   hitEyes: 0
+  transition: {fileID: 0}
 --- !u!1001 &1213942216
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67454,6 +67476,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1869265402}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 1619068121}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: workOutput
       value: 
       objectReference: {fileID: 227747252}
@@ -71330,6 +71356,7 @@ MonoBehaviour:
   confetti: {fileID: 1864312118}
   playerCam: {fileID: 1509806602}
   hitEyes: 0
+  transition: {fileID: 0}
 --- !u!1001 &1440669826
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71458,6 +71485,7 @@ MonoBehaviour:
   confetti: {fileID: 540261633}
   playerCam: {fileID: 1509806602}
   hitEyes: 0
+  transition: {fileID: 1619068121}
 --- !u!65 &1441395233
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -71818,6 +71846,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 321990585}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 1619068121}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: workOutput
       value: 
       objectReference: {fileID: 167552245}
@@ -72044,6 +72076,7 @@ MonoBehaviour:
   confetti: {fileID: 1464971206}
   playerCam: {fileID: 1509806602}
   hitEyes: 0
+  transition: {fileID: 0}
 --- !u!1 &1444650062
 GameObject:
   m_ObjectHideFlags: 0
@@ -73965,6 +73998,10 @@ PrefabInstance:
       propertyPath: npcTalking
       value: 
       objectReference: {fileID: 1077933525}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 1619068121}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: workOutput
       value: 
@@ -78936,6 +78973,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 320639894}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1619068119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1619068120}
+  - component: {fileID: 1619068121}
+  m_Layer: 5
+  m_Name: LevelChanger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1619068120
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619068119}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1836852262}
+  m_Father: {fileID: 1015921814}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.00012207031, y: 0.000061035156}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1619068121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619068119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ed5936f7d0f6b469de16e2d8d08fa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1836852263}
+  ambience: {fileID: 1866380083}
+  sfx: {fileID: 194910812}
+  music: {fileID: 1010477199}
 --- !u!1 &1619168496
 GameObject:
   m_ObjectHideFlags: 0
@@ -79964,6 +80054,7 @@ MonoBehaviour:
   confetti: {fileID: 540261633}
   playerCam: {fileID: 1509806602}
   hitEyes: 0
+  transition: {fileID: 0}
 --- !u!114 &1636762277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83702,6 +83793,10 @@ PrefabInstance:
       propertyPath: npcTalking
       value: 
       objectReference: {fileID: 1736251250}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 1619068121}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: workOutput
       value: 
@@ -87471,6 +87566,104 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1836781577}
   m_CullTransparentMesh: 1
+--- !u!1 &1836852261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1836852262}
+  - component: {fileID: 1836852265}
+  - component: {fileID: 1836852264}
+  - component: {fileID: 1836852263}
+  m_Layer: 5
+  m_Name: Fade
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1836852262
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836852261}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1619068120}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 699.99994, y: 349.99997}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1836852263
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836852261}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b6f0835e4e78b044db76ec241401a6ad, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1836852264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836852261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1836852265
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836852261}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1838486577
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -88978,6 +89171,7 @@ MonoBehaviour:
   confetti: {fileID: 1864312118}
   playerCam: {fileID: 1509806602}
   hitEyes: 0
+  transition: {fileID: 1619068121}
 --- !u!1 &1880293663
 GameObject:
   m_ObjectHideFlags: 0
@@ -91988,6 +92182,7 @@ MonoBehaviour:
   confetti: {fileID: 1011210234}
   playerCam: {fileID: 1509806602}
   hitEyes: 0
+  transition: {fileID: 1619068121}
 --- !u!1001 &1973809815
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -106825,6 +107020,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1337908289}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 1619068121}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: workOutput
       value: 
       objectReference: {fileID: 498874453}
@@ -107902,6 +108101,10 @@ PrefabInstance:
       propertyPath: npcTalking
       value: 
       objectReference: {fileID: 2047218110}
+    - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 1619068121}
     - target: {fileID: 5516071172702533563, guid: ff3dd35ee03440249922e590361828ca, type: 3}
       propertyPath: workOutput
       value: 

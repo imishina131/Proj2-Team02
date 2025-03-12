@@ -80,6 +80,8 @@ public class Typer : MonoBehaviour
 
     public GameObject lastSentence;
 
+    public LevelChanger transition;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -824,7 +826,8 @@ public class Typer : MonoBehaviour
                     interactionsCount++;
                     if (SceneManager.GetActiveScene().name == "Level01")
                     {
-                        SceneManager.LoadScene("LoadingCutscene");
+                        transition.FadeToLevel("LoadingCutscene");
+                        //SceneManager.LoadScene("LoadingCutscene");
                     }
                     break;
 
@@ -867,7 +870,8 @@ public class Typer : MonoBehaviour
                 case 12:
                     StartCoroutine(Deactivate());
                     interactionsCount ++;
-                    SceneManager.LoadScene("LoadingCutscene 1");
+                    transition.FadeToLevel("LoadingCutscene 1");
+                    //SceneManager.LoadScene("LoadingCutscene 1");
                     break;
 
                 case 13:

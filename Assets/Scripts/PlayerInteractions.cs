@@ -93,6 +93,8 @@ public class PlayerInteractions : MonoBehaviour
     public GameObject randomConvo;
     bool doneRandom;
 
+    public LevelChanger transition;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -324,7 +326,8 @@ public class PlayerInteractions : MonoBehaviour
         }
         if(other.gameObject.tag == "exit" && !typing && end)
         {
-            SceneManager.LoadScene("FinalCutscene");
+            transition.FadeToLevel("FinalCutscene");
+            //SceneManager.LoadScene("FinalCutscene");
         }
         if(other.gameObject.tag == "door" && !typing)
         {
