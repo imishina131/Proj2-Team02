@@ -12,6 +12,8 @@ public class LevelChanger : MonoBehaviour
     public AudioSource sfx;
     public AudioSource music;
 
+    public GameObject musicObject;
+
     static float maxSFXVolume;
     static float maxMusicVolume;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -30,16 +32,27 @@ public class LevelChanger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(SceneManager.GetActiveScene().name == "OptionsMenu")
-        {
-            maxSFXVolume = sfx.volume;
-            maxMusicVolume = music.volume;
-        }
+
     }
 
 
     public void FadeToLevel(string levelName)
     {
+        musicObject = GameObject.FindGameObjectWithTag("Music");
+        music = musicObject.GetComponent<AudioSource>();
+        if(SceneManager.GetActiveScene().name == "OptionsMenu")
+        {
+            if(maxMusicVolume == null)
+            {
+                maxMusicVolume = 0.18f;
+            }
+            if(maxSFXVolume == null)
+            {
+                maxSFXVolume = 1f;
+            }
+            maxSFXVolume = sfx.volume;
+            maxMusicVolume = music.volume;
+        }
         levelToLoad = levelName;
         animator.SetTrigger("FadeOut");
         Invoke("OnFadeComplete", 1.0f);

@@ -13,7 +13,7 @@ public class DontDestroy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(SceneManager.GetActiveScene().name != "MainMenu" && SceneManager.GetActiveScene().name != "HelpMenu" && SceneManager.GetActiveScene().name != "DifficultyMenu" && SceneManager.GetActiveScene().name != "CreditsMenu")
+        if(SceneManager.GetActiveScene().name != "MainMenu" && SceneManager.GetActiveScene().name != "HelpMenu" && SceneManager.GetActiveScene().name != "DifficultyMenu" && SceneManager.GetActiveScene().name != "CreditsMenu" && SceneManager.GetActiveScene().name != "OptionsMenu")
         {
             music.volume = 0;
         }

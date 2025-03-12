@@ -29,6 +29,11 @@ public class MenuController : MonoBehaviour
         //SceneManager.LoadScene("MainMenu");
     }
 
+    public void GoToOptionsMenu()
+    {
+        transition.FadeToLevel("OptionsMenu");
+    }
+
     public void GoToHelp()
     {
         transition.FadeToLevel("HelpMenu");
