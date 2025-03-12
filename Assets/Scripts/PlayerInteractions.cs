@@ -90,6 +90,9 @@ public class PlayerInteractions : MonoBehaviour
 
     public bool spamRestricted;
 
+    public GameObject randomConvo;
+    bool doneRandom;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -337,6 +340,14 @@ public class PlayerInteractions : MonoBehaviour
             Animator animator = other.gameObject.GetComponent<Animator>();
             animator.SetBool("Open", true);
         }
+
+        if(other.gameObject.tag == "Random" && !doneRandom)
+        {
+            randomConvo.SetActive(true);
+            doneRandom = true;
+        }
+
+
     }
 
     void OnTriggerExit(Collider other)

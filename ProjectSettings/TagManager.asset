@@ -22,6 +22,7 @@ TagManager:
   - exit
   - door
   - freezer
+  - Random
   layers:
   - Default
   - TransparentFX

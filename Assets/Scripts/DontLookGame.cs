@@ -16,6 +16,7 @@ public class DontLookGame : MonoBehaviour
     public bool initialized;
 
     public Typer typer;
+    public RandomTyper rTyper;
 
     public RaycastScript eyes;
 
@@ -88,7 +89,14 @@ public class DontLookGame : MonoBehaviour
             rectTransformCharacter.anchoredPosition = anchoredPosCharacter;
             rectTransformVision.anchoredPosition = anchoredPosVision;
             moving = false;
-            typer.timerOn = true;
+            if(gameObject.tag == "Random")
+            {
+                rTyper.timerOn = true;
+            }
+            else
+            {
+                typer.timerOn = true;
+            }
             playerInteract.StartCountdown();
             gameObject.SetActive(false);
         }
