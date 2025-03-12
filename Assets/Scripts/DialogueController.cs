@@ -10,11 +10,13 @@ public class DialogueController : MonoBehaviour
     public float DialogueSpeed;
     public Animator DialogueAnimator;
     private bool StartDialogue = true;
-    
-    void Update()
+    private bool Typing = false;
+
+     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Typing == false)
         {
+            
             if (StartDialogue)
             {
                 DialogueAnimator.SetTrigger("Enter");
@@ -24,12 +26,40 @@ public class DialogueController : MonoBehaviour
             {
                 NextSentence();
             }
-            
+            //Typing = true;
         }
-    }
+        
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        // if (StartDialogue)
+        //{
+        //  DialogueAnimator.SetTrigger("Enter");
+        // StartDialogue = false;
+        //  }
+        //  else
+        //  {
+        //     NextSentence();
+        // }
 
+        //  }
+    }
+    private void Awake()
+    {
+       // if (StartDialogue)
+       // {
+           // DialogueAnimator.SetTrigger("Enter");
+            //StartDialogue = false;
+       // }
+       // else
+       // {
+       //     NextSentence();
+       // }
+        //WriteSentence();
+        //NextSentence();
+    }
     void NextSentence()
     {
+        Typing = true;
         if(Index <= Sentences.Length - 1)
         {
             DialogueText.text = "";
@@ -37,10 +67,11 @@ public class DialogueController : MonoBehaviour
         }
         else
         {
-            DialogueText.text = "";
-            DialogueAnimator.SetTrigger("Exit");
-            Index = 0;
+            //DialogueText.text = "";
+            //DialogueAnimator.SetTrigger("Exit");
+            //Index = 0;
         }
+
     }
     IEnumerator WriteSentence()
     {
@@ -49,6 +80,6 @@ public class DialogueController : MonoBehaviour
             DialogueText.text += Character;
             yield return new WaitForSeconds(DialogueSpeed);
         }
-        Index++;
+        //Index++;
     }
 }
