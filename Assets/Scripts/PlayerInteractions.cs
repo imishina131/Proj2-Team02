@@ -200,7 +200,7 @@ public class PlayerInteractions : MonoBehaviour
                 sfxSound.Play();
                 interaction05.SetActive(true);
             }
-            if(inTurkeyZone && !typing)
+            if(inTurkeyZone && !typing && SceneManager.GetActiveScene().name != "Level03")
             {
                 objectiveCount ++;
                 hasTurkey = true;
@@ -247,6 +247,8 @@ public class PlayerInteractions : MonoBehaviour
                 sfxSound.clip = interact;
                 sfxSound.Play();
                 interaction03.SetActive(true);
+                interaction02.SetActive(false);
+                objectiveCount --;
             }
             if(inSinkZone && !typing && leftBreadsticks)
             {
@@ -255,7 +257,13 @@ public class PlayerInteractions : MonoBehaviour
                 sfxSound.clip = interact;
                 sfxSound.Play();
                 interaction04.SetActive(true);
+                interaction02.SetActive(false);
+                objectiveCount --;
             }
+        }
+        if(end)
+        {
+            fBanner.SetActive(false);
         }
     }
 
@@ -368,7 +376,7 @@ public class PlayerInteractions : MonoBehaviour
             fBanner.SetActive(false);
             inCashierZone = false;
         }
-        if(other.gameObject.tag == "thought01" && !typing)
+        if(other.gameObject.tag == "thought01" && !typing && SceneManager.GetActiveScene().name != "Level03")
         {
             interaction02.SetActive(true);
             other.gameObject.SetActive(false);
@@ -397,6 +405,22 @@ public class PlayerInteractions : MonoBehaviour
             Animator animator = other.gameObject.GetComponent<Animator>();
             animator.SetBool("Open", false);
         }
+        if(other.gameObject.tag == "breadsticks" && !typing)
+        {
+            fBanner.SetActive(false);
+            inBreadstickZone = false;
+        }
+        if(other.gameObject.tag == "table" && !typing)
+        {
+            fBanner.SetActive(false);
+            inTableZone = false;
+        }
+        if(other.gameObject.tag == "sink" && !typing)
+        {
+            fBanner.SetActive(false);
+            inSinkZone = false;
+        }
+
     }
 
     void UpdateObjective()
