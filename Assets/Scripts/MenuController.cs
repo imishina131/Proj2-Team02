@@ -9,6 +9,7 @@ public class MenuController : MonoBehaviour
     public LevelChanger transition;
 
     public PauseMenu pauseMenu;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,6 +17,7 @@ public class MenuController : MonoBehaviour
         {
             difficulty = 0;
             PlayerInteractions.objectiveCount = 0;
+            Typer.interactionsCount = 0;
         }
     }
 

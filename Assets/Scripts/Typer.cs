@@ -19,7 +19,7 @@ public class Typer : MonoBehaviour
     public GameObject interaction;
     public PlayerInteractions player;
     public RaycastScript eyes;
-    static int interactionsCount;
+    static public int interactionsCount;
     static public bool initialized;
     int dialogueCount = 0;
     bool nextDialogue;
