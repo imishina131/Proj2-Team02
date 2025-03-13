@@ -236,7 +236,7 @@ public class PlayerInteractions : MonoBehaviour
                 objectiveCount ++;
                 sfxSound.clip = interact;
                 sfxSound.Play();
-                objective.SetActive(false);
+                objectiveDisplay.SetActive(false);
                 interaction08.SetActive(true);
             }
             if(inBreadstickZone && !typing)
