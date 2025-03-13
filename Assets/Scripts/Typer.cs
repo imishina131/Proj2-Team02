@@ -918,4 +918,5 @@ public class Typer : MonoBehaviour
         npcTalking.SetActive(false);
         player.typing = false;
     }
+
 }
