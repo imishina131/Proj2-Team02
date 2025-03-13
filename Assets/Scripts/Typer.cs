@@ -817,6 +817,12 @@ public class Typer : MonoBehaviour
                     break;
 
                 case 3:
+                    order = 0;
+                    while(order < part04.Length)
+                    {
+                        part04[order].SetActive(true);
+                        order++;
+                    }
                     StartCoroutine(Deactivate());
                     interactionsCount ++;
                     break;
