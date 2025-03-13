@@ -44006,6 +44006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transition: {fileID: 1969033502}
+  pauseMenu: {fileID: 516070415}
 --- !u!114 &1399284002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77102,7 +77103,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1399284001}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: GoToMainMenu
+        m_MethodName: GoMainMenuInPause
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

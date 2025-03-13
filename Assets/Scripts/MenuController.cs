@@ -7,6 +7,8 @@ public class MenuController : MonoBehaviour
     static public int difficulty = 0;
 
     public LevelChanger transition;
+
+    public PauseMenu pauseMenu;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -85,4 +87,11 @@ public class MenuController : MonoBehaviour
         transition.FadeToLevel(SceneManager.GetActiveScene().name);
         //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    public void GoMainMenuInPause()
+    {
+        pauseMenu.Resume();
+        transition.FadeToLevel("MainMenu");
+    }
+
 }
