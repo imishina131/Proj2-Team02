@@ -15,6 +15,8 @@ public class MenuController : MonoBehaviour
     {
         if(SceneManager.GetActiveScene().name == "MainMenu")
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             difficulty = 0;
             PlayerInteractions.objectiveCount = 0;
             Typer.interactionsCount = 0;
