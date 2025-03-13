@@ -27445,7 +27445,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText: {fileID: 1238933851}
   Sentences:
-  - "Uncle, why aren\u2019t you looking me in the eyes?"
+  - Uncle, if you look at me. Will I explode?
   DialogueSpeed: 0.06
   DialogueAnimator: {fileID: 807318213}
 --- !u!1001 &808656033
