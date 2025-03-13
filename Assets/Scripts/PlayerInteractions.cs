@@ -238,6 +238,7 @@ public class PlayerInteractions : MonoBehaviour
                 sfxSound.Play();
                 objectiveDisplay.SetActive(false);
                 fBanner.SetActive(false);
+                crosshair.SetActive(false);
                 interaction08.SetActive(true);
             }
             if(inBreadstickZone && !typing)

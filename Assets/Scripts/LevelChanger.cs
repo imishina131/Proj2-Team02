@@ -16,35 +16,43 @@ public class LevelChanger : MonoBehaviour
 
     static float maxSFXVolume;
     static float maxMusicVolume;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
 
         if(SceneManager.GetActiveScene().name == "Level01" || SceneManager.GetActiveScene().name == "Level02" || SceneManager.GetActiveScene().name == "Level03")
         {
+            maxSFXVolume = sfx.volume;
+            maxMusicVolume = music.volume;
             StartCoroutine(MusicFadeIn());
             StartCoroutine(SFXFadeIn());
             StartCoroutine(AmbienceFadeIn());
         }
+
 
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
 
     public void FadeToLevel(string levelName)
     {
-        if(SceneManager.GetActiveScene().name == "OptionsMenu")
+
+        if(SceneManager.GetActiveScene().name != "FinalCutscene" && SceneManager.GetActiveScene().name != "LoadingCutscene" && SceneManager.GetActiveScene().name != "LoadingCutscene 1" && SceneManager.GetActiveScene().name != "OpeningCutScene")
         {
             musicObject = GameObject.FindGameObjectWithTag("Music");
             music = musicObject.GetComponent<AudioSource>();
+        }
+        if(SceneManager.GetActiveScene().name == "OptionsMenu")
+        {
             if(maxMusicVolume == null)
             {
-                maxMusicVolume = 0.18f;
+                maxMusicVolume = 0.2f;
             }
             if(maxSFXVolume == null)
             {

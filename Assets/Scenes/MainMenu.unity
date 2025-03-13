@@ -1329,6 +1329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transition: {fileID: 1254767079}
+  pauseMenu: {fileID: 0}
 --- !u!1 &1176949775
 GameObject:
   m_ObjectHideFlags: 0
@@ -1523,7 +1524,7 @@ MonoBehaviour:
   animator: {fileID: 1649623842}
   ambience: {fileID: 0}
   sfx: {fileID: 0}
-  music: {fileID: 0}
+  music: {fileID: 1176949776}
   musicObject: {fileID: 0}
 --- !u!1 &1304114273
 GameObject:
